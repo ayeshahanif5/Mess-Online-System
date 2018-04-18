@@ -40,13 +40,16 @@ namespace mess_system
             }
             return isfound;
         }
-        public void forget_password(string q, string ans, string newp)
+        public bool forget_password(string q, string ans, string newp)
         {
+            bool isfound = false;
             foreach(User u in Data.user){
                 if(u.Question==q && u.Answer==ans){
                     u.Password = newp;
+                    isfound = true;
                 }
             }
+            return isfound;
 
         }
 

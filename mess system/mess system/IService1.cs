@@ -17,7 +17,7 @@ namespace mess_system
         [OperationContract]
         bool isvalid(string fname, string lname, string reg, string password);
         [OperationContract]
-        void forget_password(string q, string ans,string newp);
+        bool forget_password(string q, string ans,string newp);
         [OperationContract]
         string GetData(int value);
 

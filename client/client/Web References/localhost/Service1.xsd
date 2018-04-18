@@ -8,6 +8,8 @@
         <xs:element minOccurs="0" name="lname" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="reg" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="q" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ans" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -30,6 +32,22 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="isvalidResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="forget_password">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="q" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ans" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="forget_passwordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="forget_passwordResult" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

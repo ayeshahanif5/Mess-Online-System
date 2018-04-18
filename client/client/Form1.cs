@@ -26,7 +26,7 @@ namespace client
         {
             localhost.Service1 s  = new localhost.Service1();
    
-            s.register( txtfname.Text, txtlname.Text, txtreg.Text, txtpassword.Text);
+            s.register( txtfname.Text, txtlname.Text, txtreg.Text, txtpassword.Text,txtquest.Text,txtans.Text);
             MessageBox.Show("user has been registered");
 
 
@@ -38,6 +38,16 @@ namespace client
             Form2 s = new Form2();
             this.Hide();
             s.Show();
+
+        }
+
+        private void lblpassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

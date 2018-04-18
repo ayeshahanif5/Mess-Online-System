@@ -42,6 +42,13 @@ namespace client
 
 
         }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            forgetpassword k = new forgetpassword();
+            this.Hide();
+            k.Show();
+        }
     }
 }
 

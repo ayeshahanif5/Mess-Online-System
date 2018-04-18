@@ -19,6 +19,12 @@
   <wsdl:message name="IService1_isvalid_OutputMessage">
     <wsdl:part name="parameters" element="tns:isvalidResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_forget_password_InputMessage">
+    <wsdl:part name="parameters" element="tns:forget_password" />
+  </wsdl:message>
+  <wsdl:message name="IService1_forget_password_OutputMessage">
+    <wsdl:part name="parameters" element="tns:forget_passwordResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_GetData_InputMessage">
     <wsdl:part name="parameters" element="tns:GetData" />
   </wsdl:message>
@@ -39,6 +45,10 @@
     <wsdl:operation name="isvalid">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/isvalid" message="tns:IService1_isvalid_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/isvalidResponse" message="tns:IService1_isvalid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="forget_password">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/forget_password" message="tns:IService1_forget_password_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/forget_passwordResponse" message="tns:IService1_forget_password_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
@@ -62,6 +72,15 @@
     </wsdl:operation>
     <wsdl:operation name="isvalid">
       <soap:operation soapAction="http://tempuri.org/IService1/isvalid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="forget_password">
+      <soap:operation soapAction="http://tempuri.org/IService1/forget_password" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -38,6 +38,10 @@
             this.lblreg = new System.Windows.Forms.Label();
             this.txtlname = new System.Windows.Forms.TextBox();
             this.txtreg = new System.Windows.Forms.TextBox();
+            this.txtans = new System.Windows.Forms.TextBox();
+            this.txtquest = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtfname
@@ -50,7 +54,7 @@
             // 
             // txtpassword
             // 
-            this.txtpassword.Location = new System.Drawing.Point(164, 111);
+            this.txtpassword.Location = new System.Drawing.Point(164, 104);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(100, 20);
             this.txtpassword.TabIndex = 1;
@@ -72,11 +76,12 @@
             this.lblpassword.Size = new System.Drawing.Size(52, 13);
             this.lblpassword.TabIndex = 3;
             this.lblpassword.Text = "password";
+            this.lblpassword.Click += new System.EventHandler(this.lblpassword_Click);
             // 
             // linklogin
             // 
             this.linklogin.AutoSize = true;
-            this.linklogin.Location = new System.Drawing.Point(60, 191);
+            this.linklogin.Location = new System.Drawing.Point(67, 304);
             this.linklogin.Name = "linklogin";
             this.linklogin.Size = new System.Drawing.Size(29, 13);
             this.linklogin.TabIndex = 4;
@@ -86,7 +91,7 @@
             // 
             // btnregister
             // 
-            this.btnregister.Location = new System.Drawing.Point(189, 186);
+            this.btnregister.Location = new System.Drawing.Point(189, 300);
             this.btnregister.Name = "btnregister";
             this.btnregister.Size = new System.Drawing.Size(75, 23);
             this.btnregister.TabIndex = 5;
@@ -106,7 +111,7 @@
             // lblreg
             // 
             this.lblreg.AutoSize = true;
-            this.lblreg.Location = new System.Drawing.Point(67, 147);
+            this.lblreg.Location = new System.Drawing.Point(67, 154);
             this.lblreg.Name = "lblreg";
             this.lblreg.Size = new System.Drawing.Size(34, 13);
             this.lblreg.TabIndex = 7;
@@ -126,11 +131,52 @@
             this.txtreg.Size = new System.Drawing.Size(100, 20);
             this.txtreg.TabIndex = 9;
             // 
+            // txtans
+            // 
+            this.txtans.Location = new System.Drawing.Point(165, 246);
+            this.txtans.Name = "txtans";
+            this.txtans.Size = new System.Drawing.Size(100, 20);
+            this.txtans.TabIndex = 12;
+            // 
+            // txtquest
+            // 
+            this.txtquest.FormattingEnabled = true;
+            this.txtquest.Items.AddRange(new object[] {
+            "whats your hobby?",
+            "whats your favourite character?"});
+            this.txtquest.Location = new System.Drawing.Point(164, 201);
+            this.txtquest.Name = "txtquest";
+            this.txtquest.Size = new System.Drawing.Size(101, 21);
+            this.txtquest.TabIndex = 13;
+            this.txtquest.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(67, 209);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "question";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(71, 253);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "answer";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(284, 332);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtquest);
+            this.Controls.Add(this.txtans);
             this.Controls.Add(this.txtreg);
             this.Controls.Add(this.txtlname);
             this.Controls.Add(this.lblreg);
@@ -160,5 +206,9 @@
         private System.Windows.Forms.Label lblreg;
         private System.Windows.Forms.TextBox txtlname;
         private System.Windows.Forms.TextBox txtreg;
+        private System.Windows.Forms.TextBox txtans;
+        private System.Windows.Forms.ComboBox txtquest;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

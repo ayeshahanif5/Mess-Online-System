@@ -39,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtreg = new System.Windows.Forms.TextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -75,7 +76,7 @@
             // 
             // btnlogin
             // 
-            this.btnlogin.Location = new System.Drawing.Point(169, 189);
+            this.btnlogin.Location = new System.Drawing.Point(167, 241);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(75, 23);
             this.btnlogin.TabIndex = 4;
@@ -86,7 +87,7 @@
             // linkregister
             // 
             this.linkregister.AutoSize = true;
-            this.linkregister.Location = new System.Drawing.Point(36, 194);
+            this.linkregister.Location = new System.Drawing.Point(36, 246);
             this.linkregister.Name = "linkregister";
             this.linkregister.Size = new System.Drawing.Size(61, 13);
             this.linkregister.TabIndex = 5;
@@ -134,11 +135,23 @@
             this.txtreg.Size = new System.Drawing.Size(100, 20);
             this.txtreg.TabIndex = 10;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(35, 211);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(82, 13);
+            this.linkLabel1.TabIndex = 11;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "forget password";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(284, 322);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.txtreg);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -170,5 +183,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtreg;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
