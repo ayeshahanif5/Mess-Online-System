@@ -16,13 +16,15 @@ namespace mess_system
         {
             return string.Format("You entered: {0}", value);
         }
-        public void register(string fname, string lname, string reg, string password)
+        public void register(string fname, string lname, string reg, string password,string q,string ans)
         {
             User u = new User();
             u.Fname = fname;
             u.Lname = lname;
             u.Reg = reg;
             u.Password = password;
+            u.Question = q;
+            u.Answer = ans;
             Data.user.Add(u);
         }
         public bool isvalid(string fname, string lname, string reg, string password)
@@ -37,6 +39,15 @@ namespace mess_system
 
             }
             return isfound;
+        }
+        public void forget_password(string q, string ans, string newp)
+        {
+            foreach(User u in Data.user){
+                if(u.Question==q && u.Answer==ans){
+                    u.Password = newp;
+                }
+            }
+
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)

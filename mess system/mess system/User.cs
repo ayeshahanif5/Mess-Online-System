@@ -38,5 +38,19 @@ namespace mess_system
                 get { return password; }
                 set { password = value; }
             }
+            private string question;
+
+            public string Question
+            {
+                get { return question; }
+                set { question = value; }
+            }
+            private string answer;
+
+            public string Answer
+            {
+                get { return answer; }
+                set { answer = value; }
+            }
         }
     }

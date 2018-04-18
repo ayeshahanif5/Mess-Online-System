@@ -13,9 +13,11 @@ namespace mess_system
     public interface IService1
     {
         [OperationContract]
-        void register(string fname, string lname, string reg, string password);
+        void register(string fname, string lname, string reg, string password,string q, string ans);
         [OperationContract]
         bool isvalid(string fname, string lname, string reg, string password);
+        [OperationContract]
+        void forget_password(string q, string ans,string newp);
         [OperationContract]
         string GetData(int value);
 
