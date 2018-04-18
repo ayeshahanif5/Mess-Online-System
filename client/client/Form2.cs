@@ -45,7 +45,7 @@ namespace client
 
         private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            forgetpassword k = new forgetpassword();
+            Form3 k = new Form3();
             this.Hide();
             k.Show();
         }
