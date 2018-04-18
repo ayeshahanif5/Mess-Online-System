@@ -1,0 +1,23 @@
+c:\users\shuja\music\documents\visual studio 2012\Projects\client\client\bin\Debug\client.exe.config
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\client\client\bin\Debug\client.exe
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\client\client\bin\Debug\client.pdb
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\client\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\client\client\obj\Debug\client.Form1.resources
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\client\client\obj\Debug\client.Form2.resources
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\client\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\client\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\client\client\obj\Debug\client.exe
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\client\client\obj\Debug\client.pdb
+C:\Users\Shuja\Desktop\client\client\bin\Debug\client.exe.config
+C:\Users\Shuja\Desktop\client\client\obj\Debug\client.exe
+C:\Users\Shuja\Desktop\client\client\obj\Debug\client.pdb
+C:\Users\Shuja\Desktop\statnments\client\client\bin\Debug\client.exe.config
+C:\Users\Shuja\Desktop\statnments\client\client\obj\Debug\client.exe
+C:\Users\Shuja\Desktop\statnments\client\client\obj\Debug\client.pdb
+C:\Users\Shuja\Desktop\statnments\client\client\bin\Debug\client.exe
+C:\Users\Shuja\Desktop\statnments\client\client\bin\Debug\client.pdb
+C:\Users\Shuja\Desktop\statnments\client\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+C:\Users\Shuja\Desktop\statnments\client\client\obj\Debug\client.Form1.resources
+C:\Users\Shuja\Desktop\statnments\client\client\obj\Debug\client.Form2.resources
+C:\Users\Shuja\Desktop\statnments\client\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\Shuja\Desktop\statnments\client\client\obj\Debug\client.csproj.GenerateResource.Cache

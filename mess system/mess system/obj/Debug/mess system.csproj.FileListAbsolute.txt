@@ -3,3 +3,8 @@ C:\Users\ayesha\Desktop\folder\mess-online-system\mess system\mess system\bin\me
 C:\Users\ayesha\Desktop\folder\mess-online-system\mess system\mess system\obj\Debug\mess system.csprojResolveAssemblyReference.cache
 C:\Users\ayesha\Desktop\folder\mess-online-system\mess system\mess system\obj\Debug\mess system.dll
 C:\Users\ayesha\Desktop\folder\mess-online-system\mess system\mess system\obj\Debug\mess system.pdb
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\kk\l\Mess-Online-System\mess system\mess system\bin\mess system.dll
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\kk\l\Mess-Online-System\mess system\mess system\bin\mess system.pdb
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\kk\l\Mess-Online-System\mess system\mess system\obj\Debug\mess system.csprojResolveAssemblyReference.cache
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\kk\l\Mess-Online-System\mess system\mess system\obj\Debug\mess system.dll
+C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\kk\l\Mess-Online-System\mess system\mess system\obj\Debug\mess system.pdb
