@@ -23,9 +23,9 @@ namespace mess_system
         [OperationContract]
         string GetData(int value);
         [OperationContract]
-        void Addfood(Food f);
+        void Addfood(string n, string p, string day, string date, string t);
         [OperationContract]
-        void Update_food(Food f);
+        void Update_food(string n, string p, string day, string date);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);

@@ -52,19 +52,25 @@ namespace mess_system
             return isfound;
 
         }
-        public void Addfood(Food f)
+        public void Addfood(string n,string p,string day,string date,string t)
         {
+            Food f = new Food();
+            f.Name = n;
+            f.Price = p;
+            f.Day = day;
+            f.Date = date;
+            f.Type = t;
             FoodDL.myFood.Add(f);
         }
-        public void Update_food(Food f)
+        public void Update_food(string n, string p, string day, string date)
         {
             foreach (Food u in FoodDL.myFood)
             {
-                if (u.Day == f.Day)
+                if (u.Day == day)
                 {
-                    u.Name = f.Name;
-                    u.Price = f.Price;
-                    u.Date = f.Date;
+                    u.Name = n;
+                    u.Price = p;
+                    u.Date = date;
                 }
             }
          }
