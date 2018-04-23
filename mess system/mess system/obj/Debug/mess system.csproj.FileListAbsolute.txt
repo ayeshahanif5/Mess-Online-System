@@ -28,3 +28,8 @@ C:\Users\ayesha\Desktop\project\Mess-Online-System\mess system\mess system\obj\D
 C:\Users\ayesha\Desktop\project\Mess-Online-System\mess system\mess system\obj\Debug\mess system.pdb
 C:\Users\ayesha\Desktop\project\Mess-Online-System\mess system\mess system\bin\mess system.dll
 C:\Users\ayesha\Desktop\project\Mess-Online-System\mess system\mess system\bin\mess system.pdb
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\mess system\mess system\bin\mess system.dll
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\mess system\mess system\bin\mess system.pdb
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\mess system\mess system\obj\Debug\mess system.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\mess system\mess system\obj\Debug\mess system.dll
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\mess system\mess system\obj\Debug\mess system.pdb

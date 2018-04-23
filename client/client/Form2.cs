@@ -49,6 +49,11 @@ namespace client
             this.Hide();
             k.Show();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

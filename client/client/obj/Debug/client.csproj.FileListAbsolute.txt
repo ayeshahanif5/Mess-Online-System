@@ -57,3 +57,15 @@ C:\Users\HP\Desktop\New folder (4)\Mess-Online-System\client\client\obj\Debug\cl
 C:\Users\ayesha\Desktop\project\Mess-Online-System\client\client\bin\Debug\client.exe.config
 C:\Users\ayesha\Desktop\project\Mess-Online-System\client\client\obj\Debug\client.exe
 C:\Users\ayesha\Desktop\project\Mess-Online-System\client\client\obj\Debug\client.pdb
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\bin\Debug\client.exe.config
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\obj\Debug\client.exe
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\obj\Debug\client.pdb
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\obj\Debug\client.AdminLogin.resources
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\obj\Debug\client.Form1.resources
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\obj\Debug\client.Form2.resources
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\obj\Debug\client.Form3.resources
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\bin\Debug\client.exe
+C:\Users\HP\Desktop\New folder (5)\Mess-Online-System\client\client\bin\Debug\client.pdb

@@ -51,6 +51,21 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="Adminisvalid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="u" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AdminisvalidResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AdminisvalidResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="GetData">
     <xs:complexType>
       <xs:sequence>

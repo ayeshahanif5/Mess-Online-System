@@ -52,6 +52,23 @@ namespace mess_system
             return isfound;
 
         }
+        public void Addfood(Food f)
+        {
+            FoodDL.myFood.Add(f);
+        }
+        public void Update_food(Food f)
+        {
+            foreach (Food u in FoodDL.myFood)
+            {
+                if (u.Day == f.Day)
+                {
+                    u.Name = f.Name;
+                    u.Price = f.Price;
+                    u.Date = f.Date;
+                }
+            }
+         }
+     
         public bool Adminisvalid(string UserName1, string Password1)
         {
             bool isfound = false;

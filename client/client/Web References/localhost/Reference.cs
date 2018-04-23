@@ -35,6 +35,8 @@ namespace client.localhost {
         
         private System.Threading.SendOrPostCallback forget_passwordOperationCompleted;
         
+        private System.Threading.SendOrPostCallback AdminisvalidOperationCompleted;
+        
         private System.Threading.SendOrPostCallback GetDataOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetDataUsingDataContractOperationCompleted;
@@ -85,6 +87,9 @@ namespace client.localhost {
         
         /// <remarks/>
         public event forget_passwordCompletedEventHandler forget_passwordCompleted;
+        
+        /// <remarks/>
+        public event AdminisvalidCompletedEventHandler AdminisvalidCompleted;
         
         /// <remarks/>
         public event GetDataCompletedEventHandler GetDataCompleted;
@@ -197,6 +202,38 @@ namespace client.localhost {
             if ((this.forget_passwordCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.forget_passwordCompleted(this, new forget_passwordCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/Adminisvalid", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void Adminisvalid([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string u, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string p, out bool AdminisvalidResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool AdminisvalidResultSpecified) {
+            object[] results = this.Invoke("Adminisvalid", new object[] {
+                        u,
+                        p});
+            AdminisvalidResult = ((bool)(results[0]));
+            AdminisvalidResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void AdminisvalidAsync(string u, string p) {
+            this.AdminisvalidAsync(u, p, null);
+        }
+        
+        /// <remarks/>
+        public void AdminisvalidAsync(string u, string p, object userState) {
+            if ((this.AdminisvalidOperationCompleted == null)) {
+                this.AdminisvalidOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAdminisvalidOperationCompleted);
+            }
+            this.InvokeAsync("Adminisvalid", new object[] {
+                        u,
+                        p}, this.AdminisvalidOperationCompleted, userState);
+        }
+        
+        private void OnAdminisvalidOperationCompleted(object arg) {
+            if ((this.AdminisvalidCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AdminisvalidCompleted(this, new AdminisvalidCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -393,6 +430,40 @@ namespace client.localhost {
         
         /// <remarks/>
         public bool forget_passwordResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void AdminisvalidCompletedEventHandler(object sender, AdminisvalidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AdminisvalidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AdminisvalidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool AdminisvalidResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool AdminisvalidResultSpecified {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((bool)(this.results[1]));

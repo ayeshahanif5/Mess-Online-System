@@ -22,6 +22,10 @@ namespace mess_system
         bool Adminisvalid(string u, string p);
         [OperationContract]
         string GetData(int value);
+        [OperationContract]
+        void Addfood(Food f);
+        [OperationContract]
+        void Update_food(Food f);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
