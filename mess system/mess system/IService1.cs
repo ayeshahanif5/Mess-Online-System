@@ -19,6 +19,8 @@ namespace mess_system
         [OperationContract]
         bool forget_password(string q, string ans,string newp);
         [OperationContract]
+        bool Adminisvalid(string u, string p);
+        [OperationContract]
         string GetData(int value);
 
         [OperationContract]

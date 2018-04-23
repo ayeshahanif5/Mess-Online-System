@@ -52,6 +52,17 @@ namespace mess_system
             return isfound;
 
         }
+        public bool Adminisvalid(string UserName1, string Password1)
+        {
+            bool isfound = false;
+                if ( UserName1==Admin.UserName1 && Password1==Admin.Password1 )
+                {
+                    isfound = true;
+                }
+
+            
+            return isfound;
+        }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {

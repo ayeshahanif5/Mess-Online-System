@@ -54,3 +54,6 @@ C:\Program Files\New folder\Mess-Online-System\client\client\obj\Debug\client.Fo
 C:\Program Files\New folder\Mess-Online-System\client\client\obj\Debug\client.Properties.Resources.resources
 C:\Program Files\New folder\Mess-Online-System\client\client\obj\Debug\client.csproj.GenerateResource.Cache
 C:\Users\HP\Desktop\New folder (4)\Mess-Online-System\client\client\obj\Debug\client.Form3.resources
+C:\Users\ayesha\Desktop\project\Mess-Online-System\client\client\bin\Debug\client.exe.config
+C:\Users\ayesha\Desktop\project\Mess-Online-System\client\client\obj\Debug\client.exe
+C:\Users\ayesha\Desktop\project\Mess-Online-System\client\client\obj\Debug\client.pdb
