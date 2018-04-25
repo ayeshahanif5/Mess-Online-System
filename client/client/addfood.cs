@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace client
 {
-    public partial class addfood : Form
+    public partial class frmaddfood : Form
     {
-        public addfood()
+        public frmaddfood()
         {
             InitializeComponent();
         }
@@ -57,5 +57,17 @@ namespace client
 
         }
     }
+
+        private void linkviewmenu_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmMenu f = new frmMenu();
+            this.Hide();
+            f.Show();
+        }
+
+        private void frmaddfood_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

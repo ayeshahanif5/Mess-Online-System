@@ -86,6 +86,10 @@ namespace mess_system
             
             return isfound;
         }
+        public List<Food> ViewMenu() {
+            return FoodDL.myFood;
+        
+        }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {

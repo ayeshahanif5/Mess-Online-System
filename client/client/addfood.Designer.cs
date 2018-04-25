@@ -1,6 +1,6 @@
 ﻿namespace client
 {
-    partial class addfood
+    partial class frmaddfood
     {
         /// <summary>
         /// Required designer variable.
@@ -40,6 +40,7 @@
             this.cmdupdate = new System.Windows.Forms.Button();
             this.lbltype = new System.Windows.Forms.Label();
             this.txttype = new System.Windows.Forms.TextBox();
+            this.linkviewmenu = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtname
@@ -101,14 +102,14 @@
             // 
             // txtdate
             // 
-            this.txtdate.Location = new System.Drawing.Point(166, 146);
+            this.txtdate.Location = new System.Drawing.Point(172, 146);
             this.txtdate.Name = "txtdate";
             this.txtdate.Size = new System.Drawing.Size(100, 20);
             this.txtdate.TabIndex = 7;
             // 
             // cmdadd
             // 
-            this.cmdadd.Location = new System.Drawing.Point(177, 227);
+            this.cmdadd.Location = new System.Drawing.Point(130, 218);
             this.cmdadd.Name = "cmdadd";
             this.cmdadd.Size = new System.Drawing.Size(75, 23);
             this.cmdadd.TabIndex = 8;
@@ -118,7 +119,7 @@
             // 
             // cmdupdate
             // 
-            this.cmdupdate.Location = new System.Drawing.Point(34, 227);
+            this.cmdupdate.Location = new System.Drawing.Point(12, 218);
             this.cmdupdate.Name = "cmdupdate";
             this.cmdupdate.Size = new System.Drawing.Size(75, 23);
             this.cmdupdate.TabIndex = 9;
@@ -129,7 +130,7 @@
             // lbltype
             // 
             this.lbltype.AutoSize = true;
-            this.lbltype.Location = new System.Drawing.Point(34, 196);
+            this.lbltype.Location = new System.Drawing.Point(29, 188);
             this.lbltype.Name = "lbltype";
             this.lbltype.Size = new System.Drawing.Size(31, 13);
             this.lbltype.TabIndex = 10;
@@ -137,16 +138,28 @@
             // 
             // txttype
             // 
-            this.txttype.Location = new System.Drawing.Point(176, 203);
+            this.txttype.Location = new System.Drawing.Point(172, 188);
             this.txttype.Name = "txttype";
             this.txttype.Size = new System.Drawing.Size(100, 20);
             this.txttype.TabIndex = 11;
             // 
-            // addfood
+            // linkviewmenu
+            // 
+            this.linkviewmenu.AutoSize = true;
+            this.linkviewmenu.Location = new System.Drawing.Point(256, 223);
+            this.linkviewmenu.Name = "linkviewmenu";
+            this.linkviewmenu.Size = new System.Drawing.Size(60, 13);
+            this.linkviewmenu.TabIndex = 12;
+            this.linkviewmenu.TabStop = true;
+            this.linkviewmenu.Text = "View Menu";
+            this.linkviewmenu.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkviewmenu_LinkClicked);
+            // 
+            // frmaddfood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(350, 262);
+            this.Controls.Add(this.linkviewmenu);
             this.Controls.Add(this.txttype);
             this.Controls.Add(this.lbltype);
             this.Controls.Add(this.cmdupdate);
@@ -159,8 +172,9 @@
             this.Controls.Add(this.lblprice);
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.txtname);
-            this.Name = "addfood";
+            this.Name = "frmaddfood";
             this.Text = "addfood";
+            this.Load += new System.EventHandler(this.frmaddfood_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +194,6 @@
         private System.Windows.Forms.Button cmdupdate;
         private System.Windows.Forms.Label lbltype;
         private System.Windows.Forms.TextBox txttype;
+        private System.Windows.Forms.LinkLabel linkviewmenu;
     }
 }

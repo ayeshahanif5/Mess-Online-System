@@ -43,6 +43,8 @@ namespace client.localhost {
         
         private System.Threading.SendOrPostCallback Update_foodOperationCompleted;
         
+        private System.Threading.SendOrPostCallback ViewMenuOperationCompleted;
+        
         private System.Threading.SendOrPostCallback GetDataUsingDataContractOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
@@ -103,6 +105,9 @@ namespace client.localhost {
         
         /// <remarks/>
         public event Update_foodCompletedEventHandler Update_foodCompleted;
+        
+        /// <remarks/>
+        public event ViewMenuCompletedEventHandler ViewMenuCompleted;
         
         /// <remarks/>
         public event GetDataUsingDataContractCompletedEventHandler GetDataUsingDataContractCompleted;
@@ -350,6 +355,35 @@ namespace client.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/ViewMenu", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/mess_system")]
+        public Food[] ViewMenu() {
+            object[] results = this.Invoke("ViewMenu", new object[0]);
+            return ((Food[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ViewMenuAsync() {
+            this.ViewMenuAsync(null);
+        }
+        
+        /// <remarks/>
+        public void ViewMenuAsync(object userState) {
+            if ((this.ViewMenuOperationCompleted == null)) {
+                this.ViewMenuOperationCompleted = new System.Threading.SendOrPostCallback(this.OnViewMenuOperationCompleted);
+            }
+            this.InvokeAsync("ViewMenu", new object[0], this.ViewMenuOperationCompleted, userState);
+        }
+        
+        private void OnViewMenuOperationCompleted(object arg) {
+            if ((this.ViewMenuCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ViewMenuCompleted(this, new ViewMenuCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/GetDataUsingDataContract", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public CompositeType GetDataUsingDataContract([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] CompositeType composite) {
@@ -395,6 +429,130 @@ namespace client.localhost {
                 return true;
             }
             return false;
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.17929")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/mess_system")]
+    public partial class Food {
+        
+        private int attendenceDField;
+        
+        private bool attendenceDFieldSpecified;
+        
+        private int attendenceLField;
+        
+        private bool attendenceLFieldSpecified;
+        
+        private string dateField;
+        
+        private string dayField;
+        
+        private string nameField;
+        
+        private string priceField;
+        
+        private string typeField;
+        
+        /// <remarks/>
+        public int AttendenceD {
+            get {
+                return this.attendenceDField;
+            }
+            set {
+                this.attendenceDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AttendenceDSpecified {
+            get {
+                return this.attendenceDFieldSpecified;
+            }
+            set {
+                this.attendenceDFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int AttendenceL {
+            get {
+                return this.attendenceLField;
+            }
+            set {
+                this.attendenceLField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AttendenceLSpecified {
+            get {
+                return this.attendenceLFieldSpecified;
+            }
+            set {
+                this.attendenceLFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Date {
+            get {
+                return this.dateField;
+            }
+            set {
+                this.dateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Day {
+            get {
+                return this.dayField;
+            }
+            set {
+                this.dayField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Price {
+            get {
+                return this.priceField;
+            }
+            set {
+                this.priceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
         }
     }
     
@@ -584,6 +742,32 @@ namespace client.localhost {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
     public delegate void Update_foodCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
+    public delegate void ViewMenuCompletedEventHandler(object sender, ViewMenuCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ViewMenuCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ViewMenuCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Food[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Food[])(this.results[0]));
+            }
+        }
+    }
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]

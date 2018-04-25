@@ -37,7 +37,7 @@
             // 
             // cmdLogin
             // 
-            this.cmdLogin.Location = new System.Drawing.Point(175, 215);
+            this.cmdLogin.Location = new System.Drawing.Point(155, 162);
             this.cmdLogin.Name = "cmdLogin";
             this.cmdLogin.Size = new System.Drawing.Size(75, 23);
             this.cmdLogin.TabIndex = 0;

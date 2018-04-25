@@ -26,7 +26,8 @@ namespace mess_system
         void Addfood(string n, string p, string day, string date, string t);
         [OperationContract]
         void Update_food(string n, string p, string day, string date);
-
+        [OperationContract]
+        List<Food> ViewMenu();
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 

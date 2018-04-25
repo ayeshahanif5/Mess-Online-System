@@ -1,6 +1,6 @@
 ﻿namespace client
 {
-    partial class Admin
+    partial class frmfirst
     {
         /// <summary>
         /// Required designer variable.
@@ -54,15 +54,15 @@
             this.linkLabel2.Text = "LOG IN AS STUDENT";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // Admin
+            // frmfirst
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
-            this.Name = "Admin";
-            this.Text = "Admin";
+            this.Name = "frmfirst";
+            this.Text = "Login Options";
             this.Load += new System.EventHandler(this.Admin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

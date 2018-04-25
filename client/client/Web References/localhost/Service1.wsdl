@@ -49,6 +49,12 @@
   <wsdl:message name="IService1_Update_food_OutputMessage">
     <wsdl:part name="parameters" element="tns:Update_foodResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_ViewMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewMenu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ViewMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewMenuResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
   </wsdl:message>
@@ -83,6 +89,10 @@
     <wsdl:operation name="Update_food">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/Update_food" message="tns:IService1_Update_food_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/Update_foodResponse" message="tns:IService1_Update_food_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ViewMenu" message="tns:IService1_ViewMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ViewMenuResponse" message="tns:IService1_ViewMenu_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetDataUsingDataContract">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
@@ -147,6 +157,15 @@
     </wsdl:operation>
     <wsdl:operation name="Update_food">
       <soap:operation soapAction="http://tempuri.org/IService1/Update_food" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewMenu">
+      <soap:operation soapAction="http://tempuri.org/IService1/ViewMenu" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

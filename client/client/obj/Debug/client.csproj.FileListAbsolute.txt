@@ -83,3 +83,18 @@ C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\project2\Mess-Online-
 C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\project2\Mess-Online-System\client\client\obj\Debug\client.csproj.GenerateResource.Cache
 C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\project2\Mess-Online-System\client\client\bin\Debug\client.exe
 C:\Users\Shuja\Music\Documents\Visual Studio 2012\Projects\project2\Mess-Online-System\client\client\bin\Debug\client.pdb
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\bin\Debug\client.exe.config
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.exe
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.pdb
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.AdminLogin.resources
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.Form1.resources
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.Form2.resources
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.Form3.resources
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\bin\Debug\client.exe
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\bin\Debug\client.pdb
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.frmfirst.resources
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.frmaddfood.resources
+C:\Users\Shuja\Desktop\Ayesha\Mess-Online-System\client\client\obj\Debug\client.frmMenu.resources

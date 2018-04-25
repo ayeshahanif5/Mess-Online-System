@@ -26,11 +26,16 @@ namespace client
             if (Adminisvalid)
             {
                 MessageBox.Show("Valid admin");
+               
             }
             else
             {
                 MessageBox.Show("inValid admin");
             }
+            frmaddfood l = new frmaddfood();
+            this.Hide();
+            l.Show();
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
