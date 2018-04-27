@@ -41,11 +41,12 @@
             this.lbltype = new System.Windows.Forms.Label();
             this.txttype = new System.Windows.Forms.TextBox();
             this.linkviewmenu = new System.Windows.Forms.LinkLabel();
+            this.lblUpdateStatus = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(166, 12);
+            this.txtname.Location = new System.Drawing.Point(172, 8);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(100, 20);
             this.txtname.TabIndex = 0;
@@ -62,7 +63,7 @@
             // lblprice
             // 
             this.lblprice.AutoSize = true;
-            this.lblprice.Location = new System.Drawing.Point(33, 68);
+            this.lblprice.Location = new System.Drawing.Point(34, 53);
             this.lblprice.Name = "lblprice";
             this.lblprice.Size = new System.Drawing.Size(31, 13);
             this.lblprice.TabIndex = 2;
@@ -71,7 +72,7 @@
             // lblday
             // 
             this.lblday.AutoSize = true;
-            this.lblday.Location = new System.Drawing.Point(34, 115);
+            this.lblday.Location = new System.Drawing.Point(34, 97);
             this.lblday.Name = "lblday";
             this.lblday.Size = new System.Drawing.Size(26, 13);
             this.lblday.TabIndex = 3;
@@ -80,7 +81,7 @@
             // lbldate
             // 
             this.lbldate.AutoSize = true;
-            this.lbldate.Location = new System.Drawing.Point(34, 153);
+            this.lbldate.Location = new System.Drawing.Point(34, 135);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(30, 13);
             this.lbldate.TabIndex = 4;
@@ -88,28 +89,28 @@
             // 
             // txtprice
             // 
-            this.txtprice.Location = new System.Drawing.Point(166, 61);
+            this.txtprice.Location = new System.Drawing.Point(172, 46);
             this.txtprice.Name = "txtprice";
             this.txtprice.Size = new System.Drawing.Size(100, 20);
             this.txtprice.TabIndex = 5;
             // 
             // txtday
             // 
-            this.txtday.Location = new System.Drawing.Point(166, 108);
+            this.txtday.Location = new System.Drawing.Point(172, 90);
             this.txtday.Name = "txtday";
             this.txtday.Size = new System.Drawing.Size(100, 20);
             this.txtday.TabIndex = 6;
             // 
             // txtdate
             // 
-            this.txtdate.Location = new System.Drawing.Point(172, 146);
+            this.txtdate.Location = new System.Drawing.Point(172, 128);
             this.txtdate.Name = "txtdate";
             this.txtdate.Size = new System.Drawing.Size(100, 20);
             this.txtdate.TabIndex = 7;
             // 
             // cmdadd
             // 
-            this.cmdadd.Location = new System.Drawing.Point(130, 218);
+            this.cmdadd.Location = new System.Drawing.Point(172, 195);
             this.cmdadd.Name = "cmdadd";
             this.cmdadd.Size = new System.Drawing.Size(75, 23);
             this.cmdadd.TabIndex = 8;
@@ -119,7 +120,7 @@
             // 
             // cmdupdate
             // 
-            this.cmdupdate.Location = new System.Drawing.Point(12, 218);
+            this.cmdupdate.Location = new System.Drawing.Point(172, 227);
             this.cmdupdate.Name = "cmdupdate";
             this.cmdupdate.Size = new System.Drawing.Size(75, 23);
             this.cmdupdate.TabIndex = 9;
@@ -130,7 +131,7 @@
             // lbltype
             // 
             this.lbltype.AutoSize = true;
-            this.lbltype.Location = new System.Drawing.Point(29, 188);
+            this.lbltype.Location = new System.Drawing.Point(34, 176);
             this.lbltype.Name = "lbltype";
             this.lbltype.Size = new System.Drawing.Size(31, 13);
             this.lbltype.TabIndex = 10;
@@ -138,7 +139,7 @@
             // 
             // txttype
             // 
-            this.txttype.Location = new System.Drawing.Point(172, 188);
+            this.txttype.Location = new System.Drawing.Point(172, 169);
             this.txttype.Name = "txttype";
             this.txttype.Size = new System.Drawing.Size(100, 20);
             this.txttype.TabIndex = 11;
@@ -146,7 +147,7 @@
             // linkviewmenu
             // 
             this.linkviewmenu.AutoSize = true;
-            this.linkviewmenu.Location = new System.Drawing.Point(256, 223);
+            this.linkviewmenu.Location = new System.Drawing.Point(263, 205);
             this.linkviewmenu.Name = "linkviewmenu";
             this.linkviewmenu.Size = new System.Drawing.Size(60, 13);
             this.linkviewmenu.TabIndex = 12;
@@ -154,11 +155,23 @@
             this.linkviewmenu.Text = "View Menu";
             this.linkviewmenu.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkviewmenu_LinkClicked);
             // 
+            // lblUpdateStatus
+            // 
+            this.lblUpdateStatus.AutoSize = true;
+            this.lblUpdateStatus.Location = new System.Drawing.Point(263, 237);
+            this.lblUpdateStatus.Name = "lblUpdateStatus";
+            this.lblUpdateStatus.Size = new System.Drawing.Size(75, 13);
+            this.lblUpdateStatus.TabIndex = 13;
+            this.lblUpdateStatus.TabStop = true;
+            this.lblUpdateStatus.Text = "Update Status";
+            this.lblUpdateStatus.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblUpdateStatus_LinkClicked);
+            // 
             // frmaddfood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 262);
+            this.Controls.Add(this.lblUpdateStatus);
             this.Controls.Add(this.linkviewmenu);
             this.Controls.Add(this.txttype);
             this.Controls.Add(this.lbltype);
@@ -195,5 +208,6 @@
         private System.Windows.Forms.Label lbltype;
         private System.Windows.Forms.TextBox txttype;
         private System.Windows.Forms.LinkLabel linkviewmenu;
+        private System.Windows.Forms.LinkLabel lblUpdateStatus;
     }
 }

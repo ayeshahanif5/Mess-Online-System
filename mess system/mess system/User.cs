@@ -52,5 +52,15 @@ namespace mess_system
                 get { return answer; }
                 set { answer = value; }
             }
+            private string status;
+
+            public string Status
+            {
+                get { return status; }
+                set { status = value; }
+            }
+
+            
+            
         }
     }

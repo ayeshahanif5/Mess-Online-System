@@ -69,5 +69,12 @@ namespace client
         {
 
         }
+
+        private void lblUpdateStatus_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           frmUpdate f= new frmUpdate();
+            this.Hide();
+            f.Show();
+        }
     }
 }

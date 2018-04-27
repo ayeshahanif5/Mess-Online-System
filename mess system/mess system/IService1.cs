@@ -29,6 +29,8 @@ namespace mess_system
         [OperationContract]
         List<Food> ViewMenu();
         [OperationContract]
+        void UpdateStatus(string r);
+        [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: Add your service operations here

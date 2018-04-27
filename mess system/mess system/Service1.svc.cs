@@ -90,6 +90,14 @@ namespace mess_system
             return FoodDL.myFood;
         
         }
+       public void UpdateStatus(string r) { 
+        foreach(User u in Data.user){
+            if(u.Reg==r){
+                u.Status = "clear";
+            }
+        }
+
+        }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
