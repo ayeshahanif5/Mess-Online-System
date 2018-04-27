@@ -36,7 +36,7 @@
             this.txtprice = new System.Windows.Forms.TextBox();
             this.txtday = new System.Windows.Forms.TextBox();
             this.txtdate = new System.Windows.Forms.TextBox();
-            this.cmdadd = new System.Windows.Forms.Button();
+            this.btnadd = new System.Windows.Forms.Button();
             this.cmdupdate = new System.Windows.Forms.Button();
             this.lbltype = new System.Windows.Forms.Label();
             this.txttype = new System.Windows.Forms.TextBox();
@@ -108,15 +108,15 @@
             this.txtdate.Size = new System.Drawing.Size(100, 20);
             this.txtdate.TabIndex = 7;
             // 
-            // cmdadd
+            // btnadd
             // 
-            this.cmdadd.Location = new System.Drawing.Point(172, 195);
-            this.cmdadd.Name = "cmdadd";
-            this.cmdadd.Size = new System.Drawing.Size(75, 23);
-            this.cmdadd.TabIndex = 8;
-            this.cmdadd.Text = "AddFood";
-            this.cmdadd.UseVisualStyleBackColor = true;
-            this.cmdadd.Click += new System.EventHandler(this.cmdadd_Click);
+            this.btnadd.Location = new System.Drawing.Point(172, 195);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(75, 23);
+            this.btnadd.TabIndex = 8;
+            this.btnadd.Text = "AddFood";
+            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.cmdadd_Click);
             // 
             // cmdupdate
             // 
@@ -176,7 +176,7 @@
             this.Controls.Add(this.txttype);
             this.Controls.Add(this.lbltype);
             this.Controls.Add(this.cmdupdate);
-            this.Controls.Add(this.cmdadd);
+            this.Controls.Add(this.btnadd);
             this.Controls.Add(this.txtdate);
             this.Controls.Add(this.txtday);
             this.Controls.Add(this.txtprice);
@@ -203,7 +203,7 @@
         private System.Windows.Forms.TextBox txtprice;
         private System.Windows.Forms.TextBox txtday;
         private System.Windows.Forms.TextBox txtdate;
-        private System.Windows.Forms.Button cmdadd;
+        private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.Button cmdupdate;
         private System.Windows.Forms.Label lbltype;
         private System.Windows.Forms.TextBox txttype;

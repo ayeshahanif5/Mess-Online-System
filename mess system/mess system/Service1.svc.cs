@@ -90,9 +90,9 @@ namespace mess_system
             return FoodDL.myFood;
         
         }
-       public void UpdateStatus(string r) { 
+       public void UpdateStatus(string reg) { 
         foreach(User u in Data.user){
-            if(u.Reg==r){
+            if(u.Reg==reg){
                 u.Status = "clear";
             }
         }
