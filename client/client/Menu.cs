@@ -37,5 +37,10 @@ namespace client
             dataGridView1.Columns[2].Visible = false;
             dataGridView1.Columns[3].Visible = false;
         }
+
+        private void lblHeading_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

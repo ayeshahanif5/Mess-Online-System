@@ -27,13 +27,15 @@ namespace mess_system
             get { return name; }
             set { name = value; }
         }
-        private string price;
-        [DataMember]
-        public string Price
+        private int price;
+
+        public int Price
         {
             get { return price; }
             set { price = value; }
         }
+        
+        
         private string type;
         [DataMember]
         public string Type
@@ -48,6 +50,21 @@ namespace mess_system
             get { return day; }
             set { day = value; }
         }
+        private bool On_Mess;
+
+        public bool On_Mess1
+        {
+            get { return On_Mess; }
+            set { On_Mess = value; }
+        }
+        private int attendence;
+
+        public int Attendence
+        {
+            get { return attendence; }
+            set { attendence = value; }
+        }
+
 
     }
 }

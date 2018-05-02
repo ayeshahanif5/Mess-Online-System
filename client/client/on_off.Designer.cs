@@ -1,6 +1,6 @@
 ﻿namespace client
 {
-    partial class frmMenu
+    partial class on_off
     {
         /// <summary>
         /// Required designer variable.
@@ -28,40 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblHeading = new System.Windows.Forms.Label();
+            this.lblmenu = new System.Windows.Forms.LinkLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmdsubmit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblHeading
+            // lblmenu
             // 
-            this.lblHeading.AutoSize = true;
-            this.lblHeading.Location = new System.Drawing.Point(26, 25);
-            this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(78, 13);
-            this.lblHeading.TabIndex = 0;
-            this.lblHeading.Text = "Menu of Week";
-            this.lblHeading.Click += new System.EventHandler(this.lblHeading_Click);
+            this.lblmenu.AutoSize = true;
+            this.lblmenu.Location = new System.Drawing.Point(23, 20);
+            this.lblmenu.Name = "lblmenu";
+            this.lblmenu.Size = new System.Drawing.Size(33, 13);
+            this.lblmenu.TabIndex = 0;
+            this.lblmenu.TabStop = true;
+            this.lblmenu.Text = "menu";
+            this.lblmenu.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblviewmenu_LinkClicked);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 52);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(240, 150);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // frmMenu
+            // cmdsubmit
+            // 
+            this.cmdsubmit.Location = new System.Drawing.Point(26, 226);
+            this.cmdsubmit.Name = "cmdsubmit";
+            this.cmdsubmit.Size = new System.Drawing.Size(75, 23);
+            this.cmdsubmit.TabIndex = 2;
+            this.cmdsubmit.Text = "submit";
+            this.cmdsubmit.UseVisualStyleBackColor = true;
+            this.cmdsubmit.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // on_off
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.cmdsubmit);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lblHeading);
-            this.Name = "frmMenu";
-            this.Text = "Menu";
-            this.Load += new System.EventHandler(this.Menu_Load);
+            this.Controls.Add(this.lblmenu);
+            this.Name = "on_off";
+            this.Text = "on_off";
+            this.Load += new System.EventHandler(this.on_off_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -70,7 +83,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblHeading;
+        private System.Windows.Forms.LinkLabel lblmenu;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button cmdsubmit;
     }
 }

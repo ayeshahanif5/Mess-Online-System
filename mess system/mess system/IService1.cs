@@ -23,13 +23,15 @@ namespace mess_system
         [OperationContract]
         string GetData(int value);
         [OperationContract]
-        void Addfood(string n, string p, string day, string date, string t);
+        void Addfood(string n, int p, string day, string date, string t);
         [OperationContract]
-        void Update_food(string n, string p, string day, string date);
+        void Update_food(string n, int p, string day, string date);
         [OperationContract]
         List<Food> ViewMenu();
         [OperationContract]
         void UpdateStatus(string r);
+        [OperationContract]
+        void submit();
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 

@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+using System.Runtime.Serialization;
 namespace mess_system
 {
+    [DataContract]
     public class User
     {
         private string fname;
@@ -59,8 +60,16 @@ namespace mess_system
                 get { return status; }
                 set { status = value; }
             }
+   
+    
+        [DataMember]
+            public static List<Food> eaten=new List<Food>();
+        private int bill;
 
-            
-            
+        public int Bill
+        {
+            get { return bill; }
+            set { bill = value; }
+        } 
         }
     }

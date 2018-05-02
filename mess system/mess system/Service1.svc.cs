@@ -16,7 +16,7 @@ namespace mess_system
         {
             return string.Format("You entered: {0}", value);
         }
-        public void register(string fname, string lname, string reg, string password,string q,string ans)
+        public void register(string fname, string lname, string reg, string password, string q, string ans)
         {
             User u = new User();
             u.Fname = fname;
@@ -32,9 +32,10 @@ namespace mess_system
             bool isfound = false;
             foreach (User u in Data.user)
             {
-                if (u.Fname == fname && u.Lname==lname && u.Reg==reg && u.Password == password)
+                if (u.Fname == fname && u.Lname == lname && u.Reg == reg && u.Password == password)
                 {
                     isfound = true;
+                    myutil.loginuser = u;
                 }
 
             }
@@ -43,8 +44,10 @@ namespace mess_system
         public bool forget_password(string q, string ans, string newp)
         {
             bool isfound = false;
-            foreach(User u in Data.user){
-                if(u.Question==q && u.Answer==ans){
+            foreach (User u in Data.user)
+            {
+                if (u.Question == q && u.Answer == ans)
+                {
                     u.Password = newp;
                     isfound = true;
                 }
@@ -52,17 +55,18 @@ namespace mess_system
             return isfound;
 
         }
-        public void Addfood(string n,string p,string day,string date,string t)
+        public void Addfood(string n, int p, string day, string date, string t)
         {
             Food f = new Food();
             f.Name = n;
             f.Price = p;
+           
             f.Day = day;
             f.Date = date;
             f.Type = t;
             FoodDL.myFood.Add(f);
         }
-        public void Update_food(string n, string p, string day, string date)
+        public void Update_food(string n, int p, string day, string date)
         {
             foreach (Food u in FoodDL.myFood)
             {
@@ -73,32 +77,49 @@ namespace mess_system
                     u.Date = date;
                 }
             }
-         }
-     
+        }
+
         public bool Adminisvalid(string UserName1, string Password1)
         {
             bool isfound = false;
-                if ( UserName1==Admin.UserName1 && Password1==Admin.Password1 )
-                {
-                    isfound = true;
-                }
+            if (UserName1 == Admin.UserName1 && Password1 == Admin.Password1)
+            {
+                isfound = true;
+            }
 
-            
+
             return isfound;
         }
-        public List<Food> ViewMenu() {
+        public List<Food> ViewMenu()
+        {
             return FoodDL.myFood;
-        
+
         }
-       public void UpdateStatus(string reg) { 
-        foreach(User u in Data.user){
-            if(u.Reg==reg){
-                u.Status = "clear";
+        public void UpdateStatus(string reg)
+        {
+            foreach (User u in Data.user)
+            {
+                if (u.Reg == reg)
+                {
+                    u.Status = "clear";
+                }
+            }
+
+        }
+        public void submit()
+        {
+
+           
+                foreach (Food d in FoodDL.myFood)
+            {
+                if (d.On_Mess1)
+                {
+                    myutil.loginuser.Bill += d.Price;
+                    d.Attendence += 1;
+                }
+                
             }
         }
-
-        }
-
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
             if (composite == null)
@@ -111,5 +132,6 @@ namespace mess_system
             }
             return composite;
         }
+       
     }
 }

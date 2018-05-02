@@ -114,3 +114,6 @@ C:\Users\MULTI.PC\Desktop\project\Mess-Online-System\client\client\obj\Debug\cli
 C:\Users\MULTI.PC\Desktop\project\Mess-Online-System\client\client\obj\Debug\client.Properties.Resources.resources
 C:\Users\MULTI.PC\Desktop\project\Mess-Online-System\client\client\obj\Debug\client.frmUpdate.resources
 C:\Users\MULTI.PC\Desktop\project\Mess-Online-System\client\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\bin\Debug\client.exe.config
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.exe
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.pdb

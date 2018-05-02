@@ -68,6 +68,7 @@
     <Compile Include="Data.cs" />
     <Compile Include="Food.cs" />
     <Compile Include="FoodDL.cs" />
+    <Compile Include="myutil.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
