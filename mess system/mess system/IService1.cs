@@ -24,14 +24,20 @@ namespace mess_system
         string GetData(int value);
         [OperationContract]
         void Addfood(string n, int p, string day, string date, string t);
+       
         [OperationContract]
         void Update_food(string n, int p, string day, string date);
+       
         [OperationContract]
         List<Food> ViewMenu();
         [OperationContract]
         void UpdateStatus(string r);
         [OperationContract]
         void submit();
+        [OperationContract]
+        int checkbillbydate(string date);
+
+
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 

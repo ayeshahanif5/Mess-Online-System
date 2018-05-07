@@ -26,7 +26,11 @@ namespace client
             else
             {
                 localhost.Service1 s = new localhost.Service1();
-                s.Addfood(txtname.Text, txtprice.Text, txtday.Text, txtdate.Text, txttype.Text);
+                bool pSpecified=true;
+                int x = Int32.Parse(txtprice.Text);
+                s.Addfood(txtname.Text, x,pSpecified,txtday.Text, txtdate.Text, txttype.Text);
+               // s.Addfood(txtname.Text,txtprice.Text,
+           
                 MessageBox.Show("Food has been added");
                 txtname.Text = "";
                 txtprice.Text = "";
@@ -41,13 +45,16 @@ namespace client
         private void cmdupdate_Click(object sender, EventArgs e)
         {
              if (string.IsNullOrWhiteSpace(txtname.Text) || string.IsNullOrWhiteSpace(txtprice.Text) || string.IsNullOrWhiteSpace(txtday.Text) || string.IsNullOrWhiteSpace(txtdate.Text) || string.IsNullOrWhiteSpace(txtday.Text) )
-            {
+             {
                 MessageBox.Show("please fill above boxes");
             }
             else
             {
+                int x = Int32.Parse(txtprice.Text);
+                bool pSpecified = true;
                 localhost.Service1 s = new localhost.Service1();
-                s.Update_food(txtname.Text, txtprice.Text, txtday.Text, txtdate.Text);
+                s.Update_food(txtname.Text, x, pSpecified,txtday.Text, txtdate.Text);
+
                 MessageBox.Show("Food has been updated");
                 txtname.Text = "";
                 txtprice.Text = "";

@@ -63,8 +63,8 @@ namespace mess_system
    
     
         [DataMember]
-            public static List<Food> eaten=new List<Food>();
-        private int bill;
+            public List<Food> eaten=new List<Food>();
+        private int bill=0;
 
         public int Bill
         {

@@ -13,7 +13,7 @@
 // 
 #pragma warning disable 1591
 
-namespace client.localhost {
+namespace mess_system.localhost {
     using System;
     using System.Web.Services;
     using System.Diagnostics;
@@ -57,7 +57,7 @@ namespace client.localhost {
         
         /// <remarks/>
         public Service1() {
-            this.Url = global::client.Properties.Settings.Default.client_localhost_Service1;
+            this.Url = global::mess_system.Properties.Settings.Default.mess_system_localhost_Service1;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;

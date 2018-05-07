@@ -31,7 +31,11 @@ namespace client
             {
                 MessageBox.Show("inValid user");
             }
+            frmoptions j = new frmoptions();
+            this.Hide();
+            j.Show();
 
+           
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -52,6 +56,18 @@ namespace client
 
         private void Form2_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void linkcheck_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           
 
         }
     }

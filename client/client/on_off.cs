@@ -39,10 +39,7 @@ namespace client
             BindingSource d = new BindingSource();
             d.DataSource = s.ViewMenu();
             dataGridView1.DataSource = d;
-           // dataGridView1.Columns[0].Visible = false;
-           // dataGridView1.Columns[1].Visible = false;
-           // dataGridView1.Columns[2].Visible = false;
-           // dataGridView1.Columns[3].Visible = false;
+        
 
         }
 

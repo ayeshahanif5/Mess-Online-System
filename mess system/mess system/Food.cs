@@ -57,7 +57,7 @@ namespace mess_system
             get { return On_Mess; }
             set { On_Mess = value; }
         }
-        private int attendence;
+        private int attendence=0;
 
         public int Attendence
         {
@@ -67,4 +67,5 @@ namespace mess_system
 
 
     }
+    
 }

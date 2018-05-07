@@ -115,10 +115,25 @@ namespace mess_system
                 if (d.On_Mess1)
                 {
                     myutil.loginuser.Bill += d.Price;
+                    myutil.loginuser.eaten.Add(d);
                     d.Attendence += 1;
+
                 }
                 
             }
+        }
+       public int checkbillbydate(string date) {
+          int  bill=0;
+            foreach(Food s in myutil.loginuser.eaten)
+            {
+                if (s.Date == date)
+                {
+                    bill += s.Price;
+                    
+
+        }
+            }
+            return bill;
         }
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {

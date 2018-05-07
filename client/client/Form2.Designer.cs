@@ -32,7 +32,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtfname = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
-            this.btnlogin = new System.Windows.Forms.Button();
             this.linkregister = new System.Windows.Forms.LinkLabel();
             this.txtlname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtreg = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.btnlogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,16 +73,6 @@
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(100, 20);
             this.txtpassword.TabIndex = 3;
-            // 
-            // btnlogin
-            // 
-            this.btnlogin.Location = new System.Drawing.Point(167, 241);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(75, 23);
-            this.btnlogin.TabIndex = 4;
-            this.btnlogin.Text = "login";
-            this.btnlogin.UseVisualStyleBackColor = true;
-            this.btnlogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkregister
             // 
@@ -146,6 +136,16 @@
             this.linkLabel1.Text = "forget password";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
+            // btnlogin
+            // 
+            this.btnlogin.Location = new System.Drawing.Point(167, 241);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(75, 23);
+            this.btnlogin.TabIndex = 4;
+            this.btnlogin.Text = "login";
+            this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,7 +177,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtfname;
         private System.Windows.Forms.TextBox txtpassword;
-        private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.LinkLabel linkregister;
         private System.Windows.Forms.TextBox txtlname;
         private System.Windows.Forms.Label label3;
@@ -185,5 +184,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtreg;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button btnlogin;
     }
 }
