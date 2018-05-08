@@ -65,21 +65,7 @@ namespace mess_system
             set { attendence = value; }
         }
 
-        private int rating;
 
-        public int Rating
-        {
-            get { return rating; }
-            set { rating = value; }
-        }
-        private int people = 0;
-
-        public int People
-        {
-            get { return people; }
-            set { people = value; }
-        }
-        public List<int> allratings;
     }
     
 }

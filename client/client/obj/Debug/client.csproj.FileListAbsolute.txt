@@ -136,23 +136,3 @@ C:\Users\Shuja\Desktop\project ooad 3 rd sprint\Mess-Online-System\client\client
 C:\Users\Shuja\Desktop\project ooad 3 rd sprint\Mess-Online-System\client\client\bin\Debug\client.exe
 C:\Users\Shuja\Desktop\project ooad 3 rd sprint\Mess-Online-System\client\client\bin\Debug\client.pdb
 C:\Users\Shuja\Desktop\project ooad 3 rd sprint\Mess-Online-System\client\client\obj\Debug\client.frmoptions.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\bin\Debug\client.exe.config
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.exe
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.pdb
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.csprojResolveAssemblyReference.cache
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.frmaddfood.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.checkbilldate.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.Form4.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.frmfirst.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.AdminLogin.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.Form1.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.Form2.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.Form3.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.frmMenu.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.on_off.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.frmoptions.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.Properties.Resources.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.frmUpdate.resources
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\obj\Debug\client.csproj.GenerateResource.Cache
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\bin\Debug\client.exe
-C:\Users\MULTI.PC\Desktop\New folder\Mess-Online-System\client\client\bin\Debug\client.pdb

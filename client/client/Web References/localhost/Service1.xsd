@@ -159,35 +159,6 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="rate">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="r" type="xs:int" />
-        <xs:element minOccurs="0" name="d" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="t" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="rateResponse">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="checkrating">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="d" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="t" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="checkratingResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="checkratingResult" type="xs:int" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="GetDataUsingDataContract">
     <xs:complexType>
       <xs:sequence>

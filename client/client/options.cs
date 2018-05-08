@@ -30,12 +30,5 @@ namespace client
             this.Hide();
             s.Show();
         }
-
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            frmrRatingUser s = new frmrRatingUser();
-            this.Hide();
-            s.Show();
-        }
     }
 }

@@ -36,10 +36,8 @@ namespace mess_system
         void submit();
         [OperationContract]
         int checkbillbydate(string date);
-        [OperationContract]
-        void rate(int r,string d,string t);
-        [OperationContract]
-        int checkrating(string d, string t);
+
+
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
