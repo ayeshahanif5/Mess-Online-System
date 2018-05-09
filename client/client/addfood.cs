@@ -90,5 +90,12 @@ namespace client
             f.Show();
             this.Hide();
         }
+
+        private void linkstatus_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            check_status s = new check_status();
+            s.Show();
+            this.Hide();
+        }
     }
 }

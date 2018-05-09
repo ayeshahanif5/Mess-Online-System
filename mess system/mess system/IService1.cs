@@ -36,6 +36,13 @@ namespace mess_system
         void submit();
         [OperationContract]
         int checkbillbydate(string date);
+        [OperationContract]
+        int claculate_bill();
+        [OperationContract]
+        int check(string reg);
+        [OperationContract]
+        string check_status(string reg);
+
 
 
         [OperationContract]

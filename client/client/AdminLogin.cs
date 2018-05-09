@@ -26,15 +26,15 @@ namespace client
             if (Adminisvalid)
             {
                 MessageBox.Show("Valid admin");
+                frmaddfood l = new frmaddfood();
+                this.Hide();
+                l.Show();
                
             }
             else
             {
                 MessageBox.Show("inValid admin");
             }
-            frmaddfood l = new frmaddfood();
-            this.Hide();
-            l.Show();
             
         }
 

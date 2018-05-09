@@ -58,3 +58,8 @@ C:\Users\Shuja\Desktop\project ooad 3 rd sprint\Mess-Online-System\mess system\m
 C:\Users\Shuja\Desktop\project ooad 3 rd sprint\Mess-Online-System\mess system\mess system\obj\Debug\mess system.csprojResolveAssemblyReference.cache
 C:\Users\Shuja\Desktop\project ooad 3 rd sprint\Mess-Online-System\mess system\mess system\obj\Debug\mess system.dll
 C:\Users\Shuja\Desktop\project ooad 3 rd sprint\Mess-Online-System\mess system\mess system\obj\Debug\mess system.pdb
+C:\Users\HP\Desktop\New folder (8)\Mess-Online-System\mess system\mess system\obj\Debug\mess system.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\New folder (8)\Mess-Online-System\mess system\mess system\obj\Debug\mess system.dll
+C:\Users\HP\Desktop\New folder (8)\Mess-Online-System\mess system\mess system\obj\Debug\mess system.pdb
+C:\Users\HP\Desktop\New folder (8)\Mess-Online-System\mess system\mess system\bin\mess system.dll
+C:\Users\HP\Desktop\New folder (8)\Mess-Online-System\mess system\mess system\bin\mess system.pdb

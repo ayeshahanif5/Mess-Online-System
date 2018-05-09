@@ -135,6 +135,42 @@ namespace mess_system
             }
             return bill;
         }
+
+       public int claculate_bill()
+       {
+
+           int b = 0;
+           foreach (Food f in myutil.loginuser.eaten)
+           {
+               b = b + f.Price;
+
+           }
+           return b;
+       }
+       public int check(string reg) {
+          int s = 0;
+       foreach (User u in Data.user)
+       {
+           if (u.Reg == reg)
+           {
+               if (u.Status == "clear")
+               {
+                   s = 1;
+               }
+               
+           }
+       }
+       return s;
+       }
+       public string check_status(string reg)
+       {
+           string l = "bill is not paid";
+           return l;
+       
+       
+       
+       
+       }
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
             if (composite == null)
@@ -147,6 +183,8 @@ namespace mess_system
             }
             return composite;
         }
+      
        
     }
 }
+

@@ -37,5 +37,12 @@ namespace client
             this.Hide();
             f.Show();
         }
+
+        private void link_current_bill_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            current_bill c = new current_bill();
+            this.Hide();
+            c.Show();
+        }
     }
 }

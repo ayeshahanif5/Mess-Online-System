@@ -22,7 +22,7 @@ namespace client
             bool rSpecified = true;
             localhost.Service1 s = new localhost.Service1();
             int y = Int32.Parse(txtRating.Text);
-            s.rate(y, rSpecified, txtDate.Text, txtType.Text);
+            //s.rate(y, rSpecified, txtDate.Text, txtType.Text);
         }
     }
 }

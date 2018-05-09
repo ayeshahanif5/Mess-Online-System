@@ -23,7 +23,7 @@ namespace client.localhost {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IService1", Namespace="http://tempuri.org/")]
@@ -51,9 +51,11 @@ namespace client.localhost {
         
         private System.Threading.SendOrPostCallback checkbillbydateOperationCompleted;
         
-        private System.Threading.SendOrPostCallback rateOperationCompleted;
+        private System.Threading.SendOrPostCallback claculate_billOperationCompleted;
         
-        private System.Threading.SendOrPostCallback checkratingOperationCompleted;
+        private System.Threading.SendOrPostCallback checkOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback check_statusOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetDataUsingDataContractOperationCompleted;
         
@@ -129,10 +131,13 @@ namespace client.localhost {
         public event checkbillbydateCompletedEventHandler checkbillbydateCompleted;
         
         /// <remarks/>
-        public event rateCompletedEventHandler rateCompleted;
+        public event claculate_billCompletedEventHandler claculate_billCompleted;
         
         /// <remarks/>
-        public event checkratingCompletedEventHandler checkratingCompleted;
+        public event checkCompletedEventHandler checkCompleted;
+        
+        /// <remarks/>
+        public event check_statusCompletedEventHandler check_statusCompleted;
         
         /// <remarks/>
         public event GetDataUsingDataContractCompletedEventHandler GetDataUsingDataContractCompleted;
@@ -497,68 +502,90 @@ namespace client.localhost {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/rate", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void rate(int r, [System.Xml.Serialization.XmlIgnoreAttribute()] bool rSpecified, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string d, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string t) {
-            this.Invoke("rate", new object[] {
-                        r,
-                        rSpecified,
-                        d,
-                        t});
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/claculate_bill", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void claculate_bill(out int claculate_billResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool claculate_billResultSpecified) {
+            object[] results = this.Invoke("claculate_bill", new object[0]);
+            claculate_billResult = ((int)(results[0]));
+            claculate_billResultSpecified = ((bool)(results[1]));
         }
         
         /// <remarks/>
-        public void rateAsync(int r, bool rSpecified, string d, string t) {
-            this.rateAsync(r, rSpecified, d, t, null);
+        public void claculate_billAsync() {
+            this.claculate_billAsync(null);
         }
         
         /// <remarks/>
-        public void rateAsync(int r, bool rSpecified, string d, string t, object userState) {
-            if ((this.rateOperationCompleted == null)) {
-                this.rateOperationCompleted = new System.Threading.SendOrPostCallback(this.OnrateOperationCompleted);
+        public void claculate_billAsync(object userState) {
+            if ((this.claculate_billOperationCompleted == null)) {
+                this.claculate_billOperationCompleted = new System.Threading.SendOrPostCallback(this.Onclaculate_billOperationCompleted);
             }
-            this.InvokeAsync("rate", new object[] {
-                        r,
-                        rSpecified,
-                        d,
-                        t}, this.rateOperationCompleted, userState);
+            this.InvokeAsync("claculate_bill", new object[0], this.claculate_billOperationCompleted, userState);
         }
         
-        private void OnrateOperationCompleted(object arg) {
-            if ((this.rateCompleted != null)) {
+        private void Onclaculate_billOperationCompleted(object arg) {
+            if ((this.claculate_billCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.rateCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.claculate_billCompleted(this, new claculate_billCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/checkrating", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void checkrating([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string d, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string t, out int checkratingResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool checkratingResultSpecified) {
-            object[] results = this.Invoke("checkrating", new object[] {
-                        d,
-                        t});
-            checkratingResult = ((int)(results[0]));
-            checkratingResultSpecified = ((bool)(results[1]));
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/check", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void check([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string reg, out int checkResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool checkResultSpecified) {
+            object[] results = this.Invoke("check", new object[] {
+                        reg});
+            checkResult = ((int)(results[0]));
+            checkResultSpecified = ((bool)(results[1]));
         }
         
         /// <remarks/>
-        public void checkratingAsync(string d, string t) {
-            this.checkratingAsync(d, t, null);
+        public void checkAsync(string reg) {
+            this.checkAsync(reg, null);
         }
         
         /// <remarks/>
-        public void checkratingAsync(string d, string t, object userState) {
-            if ((this.checkratingOperationCompleted == null)) {
-                this.checkratingOperationCompleted = new System.Threading.SendOrPostCallback(this.OncheckratingOperationCompleted);
+        public void checkAsync(string reg, object userState) {
+            if ((this.checkOperationCompleted == null)) {
+                this.checkOperationCompleted = new System.Threading.SendOrPostCallback(this.OncheckOperationCompleted);
             }
-            this.InvokeAsync("checkrating", new object[] {
-                        d,
-                        t}, this.checkratingOperationCompleted, userState);
+            this.InvokeAsync("check", new object[] {
+                        reg}, this.checkOperationCompleted, userState);
         }
         
-        private void OncheckratingOperationCompleted(object arg) {
-            if ((this.checkratingCompleted != null)) {
+        private void OncheckOperationCompleted(object arg) {
+            if ((this.checkCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.checkratingCompleted(this, new checkratingCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.checkCompleted(this, new checkCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/check_status", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string check_status([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string reg) {
+            object[] results = this.Invoke("check_status", new object[] {
+                        reg});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void check_statusAsync(string reg) {
+            this.check_statusAsync(reg, null);
+        }
+        
+        /// <remarks/>
+        public void check_statusAsync(string reg, object userState) {
+            if ((this.check_statusOperationCompleted == null)) {
+                this.check_statusOperationCompleted = new System.Threading.SendOrPostCallback(this.Oncheck_statusOperationCompleted);
+            }
+            this.InvokeAsync("check_status", new object[] {
+                        reg}, this.check_statusOperationCompleted, userState);
+        }
+        
+        private void Oncheck_statusOperationCompleted(object arg) {
+            if ((this.check_statusCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.check_statusCompleted(this, new check_statusCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -720,15 +747,15 @@ namespace client.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void registerCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void isvalidCompletedEventHandler(object sender, isvalidCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class isvalidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -758,11 +785,11 @@ namespace client.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void forget_passwordCompletedEventHandler(object sender, forget_passwordCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class forget_passwordCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -792,11 +819,11 @@ namespace client.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void AdminisvalidCompletedEventHandler(object sender, AdminisvalidCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AdminisvalidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -826,11 +853,11 @@ namespace client.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void GetDataCompletedEventHandler(object sender, GetDataCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -852,19 +879,19 @@ namespace client.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void AddfoodCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void Update_foodCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void ViewMenuCompletedEventHandler(object sender, ViewMenuCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ViewMenuCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -886,19 +913,19 @@ namespace client.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void UpdateStatusCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void submitCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void checkbillbydateCompletedEventHandler(object sender, checkbillbydateCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class checkbillbydateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -928,28 +955,24 @@ namespace client.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
-    public delegate void rateCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void claculate_billCompletedEventHandler(object sender, claculate_billCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
-    public delegate void checkratingCompletedEventHandler(object sender, checkratingCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class checkratingCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+    public partial class claculate_billCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
         
         private object[] results;
         
-        internal checkratingCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+        internal claculate_billCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }
         
         /// <remarks/>
-        public int checkratingResult {
+        public int claculate_billResult {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((int)(this.results[0]));
@@ -957,7 +980,7 @@ namespace client.localhost {
         }
         
         /// <remarks/>
-        public bool checkratingResultSpecified {
+        public bool claculate_billResultSpecified {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((bool)(this.results[1]));
@@ -966,11 +989,71 @@ namespace client.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void checkCompletedEventHandler(object sender, checkCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class checkCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal checkCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int checkResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool checkResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void check_statusCompletedEventHandler(object sender, check_statusCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class check_statusCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal check_statusCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void GetDataUsingDataContractCompletedEventHandler(object sender, GetDataUsingDataContractCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2053.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDataUsingDataContractCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {

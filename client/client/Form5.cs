@@ -22,9 +22,9 @@ namespace client
             int checkratingResult;
             bool checkratingResultSpecified;
             localhost.Service1 s = new localhost.Service1();
-            s.checkrating(txtDate.Text, txtType.Text, out checkratingResult, out checkratingResultSpecified);
-            string y = checkratingResult.ToString();
-            txtRating.Text = y;
+          //  s.checkrating(txtDate.Text, txtType.Text, out checkratingResult, out checkratingResultSpecified);
+            //string y = checkratingResult.ToString();
+            //txtRating.Text = y;
 
         }
 

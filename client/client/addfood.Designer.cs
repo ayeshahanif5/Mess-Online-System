@@ -43,6 +43,7 @@
             this.linkviewmenu = new System.Windows.Forms.LinkLabel();
             this.lblUpdateStatus = new System.Windows.Forms.LinkLabel();
             this.lbllRating = new System.Windows.Forms.LinkLabel();
+            this.linkstatus = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtname
@@ -178,11 +179,23 @@
             this.lbllRating.Text = "Check Rating";
             this.lbllRating.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // linkstatus
+            // 
+            this.linkstatus.AutoSize = true;
+            this.linkstatus.Location = new System.Drawing.Point(121, 234);
+            this.linkstatus.Name = "linkstatus";
+            this.linkstatus.Size = new System.Drawing.Size(65, 13);
+            this.linkstatus.TabIndex = 15;
+            this.linkstatus.TabStop = true;
+            this.linkstatus.Text = "checkstatus";
+            this.linkstatus.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkstatus_LinkClicked);
+            // 
             // frmaddfood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 262);
+            this.Controls.Add(this.linkstatus);
             this.Controls.Add(this.lbllRating);
             this.Controls.Add(this.lblUpdateStatus);
             this.Controls.Add(this.linkviewmenu);
@@ -223,5 +236,6 @@
         private System.Windows.Forms.LinkLabel linkviewmenu;
         private System.Windows.Forms.LinkLabel lblUpdateStatus;
         private System.Windows.Forms.LinkLabel lbllRating;
+        private System.Windows.Forms.LinkLabel linkstatus;
     }
 }
