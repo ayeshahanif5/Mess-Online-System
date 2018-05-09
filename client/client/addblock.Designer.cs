@@ -50,6 +50,7 @@
             this.cmdblock.TabIndex = 1;
             this.cmdblock.Text = "Blockuser";
             this.cmdblock.UseVisualStyleBackColor = true;
+            this.cmdblock.Click += new System.EventHandler(this.cmdblock_Click);
             // 
             // addblock
             // 

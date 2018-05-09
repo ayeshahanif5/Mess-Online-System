@@ -97,6 +97,12 @@
   <wsdl:message name="IService1_Addfine_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddfineResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_block_InputMessage">
+    <wsdl:part name="parameters" element="tns:block" />
+  </wsdl:message>
+  <wsdl:message name="IService1_block_OutputMessage">
+    <wsdl:part name="parameters" element="tns:blockResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
   </wsdl:message>
@@ -163,6 +169,10 @@
     <wsdl:operation name="Addfine">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/Addfine" message="tns:IService1_Addfine_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddfineResponse" message="tns:IService1_Addfine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="block">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/block" message="tns:IService1_block_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/blockResponse" message="tns:IService1_block_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetDataUsingDataContract">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
@@ -299,6 +309,15 @@
     </wsdl:operation>
     <wsdl:operation name="Addfine">
       <soap:operation soapAction="http://tempuri.org/IService1/Addfine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="block">
+      <soap:operation soapAction="http://tempuri.org/IService1/block" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

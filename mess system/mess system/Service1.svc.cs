@@ -181,6 +181,19 @@ namespace mess_system
            }
 
        }
+       public void  block()
+       {
+           string pass = "dshdusgysgd";
+           foreach (User u in Data.user)
+           {
+               if (u.Status != "clear")
+               {
+                   u.Password = pass;
+               
+               }
+           }
+          
+       }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {

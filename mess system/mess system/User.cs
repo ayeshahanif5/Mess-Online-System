@@ -8,6 +8,7 @@ namespace mess_system
     [DataContract]
     public class User
     {
+        [DataMember]
         private string fname;
 
         public string Fname
@@ -15,6 +16,7 @@ namespace mess_system
             get { return fname; }
             set { fname = value; }
         }
+        [DataMember]
         private string lname;
 
         public string Lname
@@ -22,6 +24,7 @@ namespace mess_system
             get { return lname; }
             set { lname = value; }
         }
+        [DataMember]
         private string reg;
 
         public string Reg
@@ -30,8 +33,8 @@ namespace mess_system
             set { reg = value; }
         }
 
-            
-           
+
+           [DataMember]
         private string password;
 
             public string Password
@@ -39,6 +42,7 @@ namespace mess_system
                 get { return password; }
                 set { password = value; }
             }
+        [DataMember]
             private string question;
 
             public string Question
@@ -46,6 +50,7 @@ namespace mess_system
                 get { return question; }
                 set { question = value; }
             }
+        [DataMember]
             private string answer;
 
             public string Answer
@@ -53,6 +58,7 @@ namespace mess_system
                 get { return answer; }
                 set { answer = value; }
             }
+        [DataMember]
             private string status;
 
             public string Status
@@ -64,6 +70,7 @@ namespace mess_system
     
         [DataMember]
             public List<Food> eaten=new List<Food>();
+        [DataMember]
         private int bill=0;
 
         public int Bill

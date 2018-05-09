@@ -27,8 +27,8 @@ namespace client
         {
             localhost.Service1 s = new localhost.Service1();
 
-            //List<localhost.Food> l = new List<localhost.Food>();
-            //l = s.ViewMenu();
+            List<localhost.Food> l = new List<localhost.Food>();
+           // = s.ViewMenu();
             BindingSource d = new BindingSource();
             d.DataSource = s.ViewMenu();
             dataGridView1.DataSource = d;

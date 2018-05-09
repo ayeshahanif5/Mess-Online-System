@@ -21,7 +21,13 @@ namespace client
         {
             localhost.Service1 s = new localhost.Service1();
             s.Addfine();
-            
+
+        }
+
+        private void cmdblock_Click(object sender, EventArgs e)
+        {
+            localhost.Service1 s = new localhost.Service1();
+            s.block();
         }
     }
 }

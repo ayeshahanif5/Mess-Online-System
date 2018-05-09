@@ -204,3 +204,24 @@ C:\Users\Shuja\Desktop\New folder (2)\Mess-Online-System\client\client\obj\Debug
 C:\Users\Shuja\Desktop\New folder (2)\Mess-Online-System\client\client\obj\Debug\client.Properties.Resources.resources
 C:\Users\Shuja\Desktop\New folder (2)\Mess-Online-System\client\client\obj\Debug\client.frmUpdate.resources
 C:\Users\Shuja\Desktop\New folder (2)\Mess-Online-System\client\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.addblock.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.frmaddfood.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.checkbilldate.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.check_status.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.current_bill.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.frmUserRting.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.frmCheckRating.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.frmfirst.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.AdminLogin.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.Form1.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.Form2.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.Form3.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.frmMenu.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.on_off.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.frmoptions.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.frmUpdate.resources
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\bin\Debug\client.exe
+C:\Users\ayesha\Desktop\Mess-Online-System\client\client\bin\Debug\client.pdb
