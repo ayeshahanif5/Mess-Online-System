@@ -167,10 +167,21 @@ namespace mess_system
            string l = "bill is not paid";
            return l;
        
-       
-       
-       
+     
        }
+       public void Addfine()
+       {
+           foreach (User u in Data.user)
+           {
+               if (u.Status != "clear")
+               {
+                   u.Bill += 100;
+               }
+    
+           }
+
+       }
+
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
             if (composite == null)

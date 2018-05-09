@@ -42,6 +42,10 @@ namespace mess_system
         int check(string reg);
         [OperationContract]
         string check_status(string reg);
+        [OperationContract]
+        void Addfine();
+
+
 
 
 

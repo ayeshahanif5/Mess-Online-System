@@ -97,5 +97,13 @@ namespace client
             s.Show();
             this.Hide();
         }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            addblock s = new addblock();
+            this.Hide();
+            s.Show();
+
+        }
     }
 }

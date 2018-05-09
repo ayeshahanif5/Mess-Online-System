@@ -44,6 +44,7 @@
             this.lblUpdateStatus = new System.Windows.Forms.LinkLabel();
             this.lbllRating = new System.Windows.Forms.LinkLabel();
             this.linkstatus = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtname
@@ -112,7 +113,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(197, 195);
+            this.btnadd.Location = new System.Drawing.Point(263, 195);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(75, 23);
             this.btnadd.TabIndex = 8;
@@ -122,7 +123,7 @@
             // 
             // cmdupdate
             // 
-            this.cmdupdate.Location = new System.Drawing.Point(197, 224);
+            this.cmdupdate.Location = new System.Drawing.Point(263, 224);
             this.cmdupdate.Name = "cmdupdate";
             this.cmdupdate.Size = new System.Drawing.Size(75, 23);
             this.cmdupdate.TabIndex = 9;
@@ -190,11 +191,23 @@
             this.linkstatus.Text = "checkstatus";
             this.linkstatus.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkstatus_LinkClicked);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(202, 205);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(60, 13);
+            this.linkLabel1.TabIndex = 16;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Add /block";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
+            // 
             // frmaddfood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 262);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.linkstatus);
             this.Controls.Add(this.lbllRating);
             this.Controls.Add(this.lblUpdateStatus);
@@ -237,5 +250,6 @@
         private System.Windows.Forms.LinkLabel lblUpdateStatus;
         private System.Windows.Forms.LinkLabel lbllRating;
         private System.Windows.Forms.LinkLabel linkstatus;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
