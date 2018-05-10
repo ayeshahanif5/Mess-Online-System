@@ -135,6 +135,38 @@ namespace mess_system
             }
             return bill;
         }
+       public void rate(int r,string d,string t) {
+
+           
+        foreach (Food f in FoodDL.myFood)
+           {
+               if (f.Date == d && f.Type == t)
+               {
+                   f.People += 1;
+                   f.allratings.Add(r);
+                   int sum = 0;
+                   foreach (int i in f.allratings)
+                   {
+                       sum += i;
+                   }
+
+                   f.Rating = sum / f.People;
+                   
+               }
+           }
+       }
+       public int checkrating(string d, string t) { 
+       
+           int x=0;
+           foreach (Food f in FoodDL.myFood)
+           {
+               if (f.Date == d && f.Type == t)
+               {
+                   x = f.Rating;
+               }
+           }
+           return x;
+       }
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
             if (composite == null)

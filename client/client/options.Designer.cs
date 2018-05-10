@@ -30,6 +30,7 @@
         {
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.lblRateFood = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel1
@@ -46,7 +47,7 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(91, 144);
+            this.linkLabel2.Location = new System.Drawing.Point(91, 92);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(60, 13);
             this.linkLabel2.TabIndex = 1;
@@ -54,11 +55,23 @@
             this.linkLabel2.Text = "View Menu";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // lblRateFood
+            // 
+            this.lblRateFood.AutoSize = true;
+            this.lblRateFood.Location = new System.Drawing.Point(94, 129);
+            this.lblRateFood.Name = "lblRateFood";
+            this.lblRateFood.Size = new System.Drawing.Size(57, 13);
+            this.lblRateFood.TabIndex = 2;
+            this.lblRateFood.TabStop = true;
+            this.lblRateFood.Text = "Rate Food";
+            this.lblRateFood.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
             // frmoptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.lblRateFood);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Name = "frmoptions";
@@ -72,5 +85,6 @@
 
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel lblRateFood;
     }
 }

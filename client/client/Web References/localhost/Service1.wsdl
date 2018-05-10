@@ -73,6 +73,18 @@
   <wsdl:message name="IService1_checkbillbydate_OutputMessage">
     <wsdl:part name="parameters" element="tns:checkbillbydateResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_rate_InputMessage">
+    <wsdl:part name="parameters" element="tns:rate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_rate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_checkrating_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkrating" />
+  </wsdl:message>
+  <wsdl:message name="IService1_checkrating_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkratingResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
   </wsdl:message>
@@ -123,6 +135,14 @@
     <wsdl:operation name="checkbillbydate">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/checkbillbydate" message="tns:IService1_checkbillbydate_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/checkbillbydateResponse" message="tns:IService1_checkbillbydate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/rate" message="tns:IService1_rate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/rateResponse" message="tns:IService1_rate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkrating">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/checkrating" message="tns:IService1_checkrating_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/checkratingResponse" message="tns:IService1_checkrating_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetDataUsingDataContract">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
@@ -223,6 +243,24 @@
     </wsdl:operation>
     <wsdl:operation name="checkbillbydate">
       <soap:operation soapAction="http://tempuri.org/IService1/checkbillbydate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rate">
+      <soap:operation soapAction="http://tempuri.org/IService1/rate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkrating">
+      <soap:operation soapAction="http://tempuri.org/IService1/checkrating" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
