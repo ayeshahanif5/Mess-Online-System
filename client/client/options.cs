@@ -26,7 +26,7 @@ namespace client
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmMenu s = new frmMenu();
+            on_off s = new on_off();
             this.Hide();
             s.Show();
         }

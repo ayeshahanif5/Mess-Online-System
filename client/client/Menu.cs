@@ -35,7 +35,7 @@ namespace client
             d.DataSource = s.ViewMenu();
             dataGridView1.DataSource = d;
             dataGridView1.Columns[0].Visible = false;
-        dataGridView1.Columns[1].Visible = false;
+            dataGridView1.Columns[1].Visible = false;
            dataGridView1.Columns[5].Visible = false;
             dataGridView1.Columns[6].Visible = false;
             dataGridView1.Columns[7].Visible = false;
@@ -56,7 +56,7 @@ namespace client
 
         private void lbllGoBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmaddfood f = new frmaddfood();
+            frmaddfood f = new frmaddfood(); 
             f.Show();
             this.Hide();
         }

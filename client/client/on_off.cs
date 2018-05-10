@@ -38,7 +38,14 @@ namespace client
             BindingSource d = new BindingSource();
             d.DataSource = s.ViewMenu();
             dataGridView1.DataSource = d;
-            dataGridView1.Columns[6].Visible = true;
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[1].Visible = false;
+            dataGridView1.Columns[6].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
+            dataGridView1.Columns[8].Visible = false;
+            dataGridView1.Columns[10].Visible = false;
+            dataGridView1.Columns[11].Visible = false;
+            dataGridView1.Columns[12].Visible = false;
 
 
         
@@ -48,6 +55,7 @@ namespace client
         private void button1_Click(object sender, EventArgs e)
         {
             localhost.Service1 s = new localhost.Service1();
+            
             s.submit();
         }
 

@@ -129,7 +129,9 @@ namespace mess_system
             {
                 if (s.Date == date)
                 {
-                    bill += s.Price;
+                  
+                        bill += s.Price;
+                    
                     
 
         }
