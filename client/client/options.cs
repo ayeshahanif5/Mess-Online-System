@@ -30,5 +30,12 @@ namespace client
             this.Hide();
             s.Show();
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmUserRting f = new frmUserRting();
+            this.Hide();
+            f.Show();
+        }
     }
 }

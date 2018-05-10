@@ -83,5 +83,12 @@ namespace client
             this.Hide();
             f.Show();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmCheckRating f = new frmCheckRating();
+            f.Show();
+            this.Hide();
+        }
     }
 }

@@ -42,6 +42,7 @@
             this.txttype = new System.Windows.Forms.TextBox();
             this.linkviewmenu = new System.Windows.Forms.LinkLabel();
             this.lblUpdateStatus = new System.Windows.Forms.LinkLabel();
+            this.lbllRating = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtname
@@ -110,7 +111,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(172, 195);
+            this.btnadd.Location = new System.Drawing.Point(197, 195);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(75, 23);
             this.btnadd.TabIndex = 8;
@@ -120,7 +121,7 @@
             // 
             // cmdupdate
             // 
-            this.cmdupdate.Location = new System.Drawing.Point(172, 227);
+            this.cmdupdate.Location = new System.Drawing.Point(197, 224);
             this.cmdupdate.Name = "cmdupdate";
             this.cmdupdate.Size = new System.Drawing.Size(75, 23);
             this.cmdupdate.TabIndex = 9;
@@ -147,7 +148,7 @@
             // linkviewmenu
             // 
             this.linkviewmenu.AutoSize = true;
-            this.linkviewmenu.Location = new System.Drawing.Point(263, 205);
+            this.linkviewmenu.Location = new System.Drawing.Point(18, 205);
             this.linkviewmenu.Name = "linkviewmenu";
             this.linkviewmenu.Size = new System.Drawing.Size(60, 13);
             this.linkviewmenu.TabIndex = 12;
@@ -158,7 +159,7 @@
             // lblUpdateStatus
             // 
             this.lblUpdateStatus.AutoSize = true;
-            this.lblUpdateStatus.Location = new System.Drawing.Point(263, 237);
+            this.lblUpdateStatus.Location = new System.Drawing.Point(18, 234);
             this.lblUpdateStatus.Name = "lblUpdateStatus";
             this.lblUpdateStatus.Size = new System.Drawing.Size(75, 13);
             this.lblUpdateStatus.TabIndex = 13;
@@ -166,11 +167,23 @@
             this.lblUpdateStatus.Text = "Update Status";
             this.lblUpdateStatus.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblUpdateStatus_LinkClicked);
             // 
+            // lbllRating
+            // 
+            this.lbllRating.AutoSize = true;
+            this.lbllRating.Location = new System.Drawing.Point(104, 205);
+            this.lbllRating.Name = "lbllRating";
+            this.lbllRating.Size = new System.Drawing.Size(72, 13);
+            this.lbllRating.TabIndex = 14;
+            this.lbllRating.TabStop = true;
+            this.lbllRating.Text = "Check Rating";
+            this.lbllRating.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // frmaddfood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 262);
+            this.Controls.Add(this.lbllRating);
             this.Controls.Add(this.lblUpdateStatus);
             this.Controls.Add(this.linkviewmenu);
             this.Controls.Add(this.txttype);
@@ -209,5 +222,6 @@
         private System.Windows.Forms.TextBox txttype;
         private System.Windows.Forms.LinkLabel linkviewmenu;
         private System.Windows.Forms.LinkLabel lblUpdateStatus;
+        private System.Windows.Forms.LinkLabel lbllRating;
     }
 }
