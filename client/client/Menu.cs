@@ -25,17 +25,28 @@ namespace client
 
         private void Menu_Load(object sender, EventArgs e)
         {
+          //  localhost.Service1 s = new localhost.Service1();
+           
+            //BindingSource d = new BindingSource();
+            //d.DataSource = s.ViewMenu();
+            //dataGridView1.DataSource = d;
             localhost.Service1 s = new localhost.Service1();
-
-            List<localhost.Food> l = new List<localhost.Food>();
-           // = s.ViewMenu();
             BindingSource d = new BindingSource();
             d.DataSource = s.ViewMenu();
             dataGridView1.DataSource = d;
-           // dataGridView1.Columns[0].Visible = false;
-            //dataGridView1.Columns[1].Visible = false;
-            //dataGridView1.Columns[2].Visible = false;
-            //dataGridView1.Columns[3].Visible = false;
+            dataGridView1.Columns[0].Visible = false;
+        dataGridView1.Columns[1].Visible = false;
+           dataGridView1.Columns[5].Visible = false;
+            dataGridView1.Columns[6].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
+            dataGridView1.Columns[8].Visible = false;
+            dataGridView1.Columns[10].Visible = false;
+            dataGridView1.Columns[11].Visible = false;
+            dataGridView1.Columns[12].Visible = false;
+
+            
+
+
         }
 
         private void lblHeading_Click(object sender, EventArgs e)

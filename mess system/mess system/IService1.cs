@@ -52,7 +52,8 @@ namespace mess_system
         int checkrating(string d, string t);
         [OperationContract]
         bool ValidRegistration(string reg);
-
+        [OperationContract]
+        int getattendence(string date,string type);
 
 
 

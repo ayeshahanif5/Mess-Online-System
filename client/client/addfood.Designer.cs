@@ -45,11 +45,12 @@
             this.lbllRating = new System.Windows.Forms.LinkLabel();
             this.linkstatus = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkattendence = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(172, 42);
+            this.txtname.Location = new System.Drawing.Point(301, 42);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(100, 20);
             this.txtname.TabIndex = 0;
@@ -57,7 +58,7 @@
             // lblname
             // 
             this.lblname.AutoSize = true;
-            this.lblname.Location = new System.Drawing.Point(32, 42);
+            this.lblname.Location = new System.Drawing.Point(150, 42);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(35, 13);
             this.lblname.TabIndex = 1;
@@ -66,7 +67,7 @@
             // lblprice
             // 
             this.lblprice.AutoSize = true;
-            this.lblprice.Location = new System.Drawing.Point(32, 90);
+            this.lblprice.Location = new System.Drawing.Point(150, 94);
             this.lblprice.Name = "lblprice";
             this.lblprice.Size = new System.Drawing.Size(31, 13);
             this.lblprice.TabIndex = 2;
@@ -75,7 +76,7 @@
             // lblday
             // 
             this.lblday.AutoSize = true;
-            this.lblday.Location = new System.Drawing.Point(33, 135);
+            this.lblday.Location = new System.Drawing.Point(150, 135);
             this.lblday.Name = "lblday";
             this.lblday.Size = new System.Drawing.Size(26, 13);
             this.lblday.TabIndex = 3;
@@ -84,7 +85,7 @@
             // lbldate
             // 
             this.lbldate.AutoSize = true;
-            this.lbldate.Location = new System.Drawing.Point(33, 185);
+            this.lbldate.Location = new System.Drawing.Point(151, 192);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(30, 13);
             this.lbldate.TabIndex = 4;
@@ -92,28 +93,28 @@
             // 
             // txtprice
             // 
-            this.txtprice.Location = new System.Drawing.Point(172, 90);
+            this.txtprice.Location = new System.Drawing.Point(303, 87);
             this.txtprice.Name = "txtprice";
             this.txtprice.Size = new System.Drawing.Size(100, 20);
             this.txtprice.TabIndex = 5;
             // 
             // txtday
             // 
-            this.txtday.Location = new System.Drawing.Point(172, 135);
+            this.txtday.Location = new System.Drawing.Point(303, 135);
             this.txtday.Name = "txtday";
             this.txtday.Size = new System.Drawing.Size(100, 20);
             this.txtday.TabIndex = 6;
             // 
             // txtdate
             // 
-            this.txtdate.Location = new System.Drawing.Point(172, 185);
+            this.txtdate.Location = new System.Drawing.Point(301, 185);
             this.txtdate.Name = "txtdate";
             this.txtdate.Size = new System.Drawing.Size(100, 20);
             this.txtdate.TabIndex = 7;
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(99, 277);
+            this.btnadd.Location = new System.Drawing.Point(24, 277);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(75, 23);
             this.btnadd.TabIndex = 8;
@@ -123,7 +124,7 @@
             // 
             // cmdupdate
             // 
-            this.cmdupdate.Location = new System.Drawing.Point(197, 277);
+            this.cmdupdate.Location = new System.Drawing.Point(440, 277);
             this.cmdupdate.Name = "cmdupdate";
             this.cmdupdate.Size = new System.Drawing.Size(75, 23);
             this.cmdupdate.TabIndex = 9;
@@ -134,7 +135,7 @@
             // lbltype
             // 
             this.lbltype.AutoSize = true;
-            this.lbltype.Location = new System.Drawing.Point(32, 234);
+            this.lbltype.Location = new System.Drawing.Point(150, 241);
             this.lbltype.Name = "lbltype";
             this.lbltype.Size = new System.Drawing.Size(31, 13);
             this.lbltype.TabIndex = 10;
@@ -142,7 +143,7 @@
             // 
             // txttype
             // 
-            this.txttype.Location = new System.Drawing.Point(172, 234);
+            this.txttype.Location = new System.Drawing.Point(303, 234);
             this.txttype.Name = "txttype";
             this.txttype.Size = new System.Drawing.Size(100, 20);
             this.txttype.TabIndex = 11;
@@ -202,11 +203,23 @@
             this.linkLabel1.Text = "Add /block";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
+            // linkattendence
+            // 
+            this.linkattendence.AutoSize = true;
+            this.linkattendence.Location = new System.Drawing.Point(424, 9);
+            this.linkattendence.Name = "linkattendence";
+            this.linkattendence.Size = new System.Drawing.Size(91, 13);
+            this.linkattendence.TabIndex = 17;
+            this.linkattendence.TabStop = true;
+            this.linkattendence.Text = "checkattendence";
+            this.linkattendence.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkattendence_LinkClicked);
+            // 
             // frmaddfood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 312);
+            this.ClientSize = new System.Drawing.Size(530, 312);
+            this.Controls.Add(this.linkattendence);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.linkstatus);
             this.Controls.Add(this.lbllRating);
@@ -251,5 +264,6 @@
         private System.Windows.Forms.LinkLabel lbllRating;
         private System.Windows.Forms.LinkLabel linkstatus;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkattendence;
     }
 }

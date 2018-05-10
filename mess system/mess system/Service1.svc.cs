@@ -255,6 +255,23 @@ namespace mess_system
             }
             return composite;
         }
+        public int getattendence(string date,string type)
+        {
+            int k = 0;
+            foreach (Food f in FoodDL.myFood)
+            {
+                if (f.Date == date && f.Type == type)
+                {
+                   k=  f.Attendence;
+                }
+            
+            
+            }
+            return k;
+        
+        
+        
+        }
       
        
     }

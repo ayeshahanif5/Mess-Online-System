@@ -105,5 +105,12 @@ namespace client
             s.Show();
 
         }
+
+        private void linkattendence_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            attendence t = new attendence();
+            t.Show();
+            this.Hide();
+        }
     }
 }

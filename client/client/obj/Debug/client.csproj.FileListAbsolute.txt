@@ -249,3 +249,5 @@ C:\Users\MULTI.PC\Desktop\New folder (3)\Mess-Online-System\client\client\obj\De
 C:\Users\MULTI.PC\Desktop\New folder (3)\Mess-Online-System\client\client\obj\Debug\client.Properties.Resources.resources
 C:\Users\MULTI.PC\Desktop\New folder (3)\Mess-Online-System\client\client\obj\Debug\client.frmUpdate.resources
 C:\Users\MULTI.PC\Desktop\New folder (3)\Mess-Online-System\client\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\Users\HP\Desktop\New folder (8)\Mess-Online-System\client\client\obj\Debug\client.addblock.resources
+C:\Users\HP\Desktop\New folder (8)\Mess-Online-System\client\client\obj\Debug\client.attendence.resources

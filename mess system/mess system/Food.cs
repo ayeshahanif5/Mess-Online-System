@@ -28,7 +28,7 @@ namespace mess_system
             set { name = value; }
         }
         private int price;
-
+          [DataMember]
         public int Price
         {
             get { return price; }
@@ -51,27 +51,28 @@ namespace mess_system
             set { day = value; }
         }
         private bool On_Mess;
-
+          [DataMember]
         public bool On_Mess1
         {
             get { return On_Mess; }
             set { On_Mess = value; }
         }
         private int attendence=0;
-
+          [DataMember]
         public int Attendence
         {
             get { return attendence; }
             set { attendence = value; }
         }
         private int rating;
+          [DataMember]
         public int Rating
         {
             get { return rating; }
             set { rating = value; }
         }
         private int people = 0;
-
+          [DataMember]
         public int People
         {
             get { return people; }

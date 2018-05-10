@@ -35,10 +35,12 @@ namespace client
         private void on_off_Load(object sender, EventArgs e)
         {
             localhost.Service1 s = new localhost.Service1();
-
             BindingSource d = new BindingSource();
             d.DataSource = s.ViewMenu();
             dataGridView1.DataSource = d;
+            dataGridView1.Columns[6].Visible = true;
+
+
         
 
         }

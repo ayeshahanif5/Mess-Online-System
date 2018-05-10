@@ -26,14 +26,15 @@ namespace client
             if (isvalid)
             {
                 MessageBox.Show("Valid user");
+                frmoptions j = new frmoptions();
+                this.Hide();
+                j.Show();
             }
             else
             {
                 MessageBox.Show("inValid user");
             }
-            frmoptions j = new frmoptions();
-            this.Hide();
-            j.Show();
+           
 
            
         }

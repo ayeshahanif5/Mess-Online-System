@@ -58,6 +58,12 @@
     <Compile Include="addfood.Designer.cs">
       <DependentUpon>addfood.cs</DependentUpon>
     </Compile>
+    <Compile Include="attendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attendence.Designer.cs">
+      <DependentUpon>attendence.cs</DependentUpon>
+    </Compile>
     <Compile Include="checkbilldate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addfood.resx">
       <DependentUpon>addfood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attendence.resx">
+      <DependentUpon>attendence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="checkbilldate.resx">
       <DependentUpon>checkbilldate.cs</DependentUpon>
