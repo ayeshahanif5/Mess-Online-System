@@ -48,5 +48,12 @@ namespace client
             localhost.Service1 s = new localhost.Service1();
             s.submit();
         }
+
+        private void lbllGoBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmoptions f = new frmoptions();
+            this.Hide();
+            f.Show();
+        }
     }
 }

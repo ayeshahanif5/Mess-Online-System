@@ -35,6 +35,7 @@
             this.txtRating = new System.Windows.Forms.TextBox();
             this.lblRating = new System.Windows.Forms.Label();
             this.btnCheck = new System.Windows.Forms.Button();
+            this.lbllGoBack = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // lblDate
@@ -96,11 +97,23 @@
             this.btnCheck.UseVisualStyleBackColor = true;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
+            // lbllGoBack
+            // 
+            this.lbllGoBack.AutoSize = true;
+            this.lbllGoBack.Location = new System.Drawing.Point(208, 214);
+            this.lbllGoBack.Name = "lbllGoBack";
+            this.lbllGoBack.Size = new System.Drawing.Size(49, 13);
+            this.lbllGoBack.TabIndex = 7;
+            this.lbllGoBack.TabStop = true;
+            this.lbllGoBack.Text = "Go Back";
+            this.lbllGoBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbllGoBack_LinkClicked);
+            // 
             // frmCheckRating
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.lbllGoBack);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.lblRating);
             this.Controls.Add(this.txtRating);
@@ -124,5 +137,6 @@
         private System.Windows.Forms.TextBox txtRating;
         private System.Windows.Forms.Label lblRating;
         private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.LinkLabel lbllGoBack;
     }
 }

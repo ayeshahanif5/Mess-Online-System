@@ -34,5 +34,12 @@ namespace client
             
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmoptions f = new frmoptions();
+            this.Hide();
+            f.Show();
+        }
     }
 }

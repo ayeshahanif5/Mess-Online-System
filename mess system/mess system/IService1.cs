@@ -46,6 +46,12 @@ namespace mess_system
         void Addfine();
         [OperationContract]
         void block();
+        [OperationContract]
+        void rate(int r, string d, string t);
+        [OperationContract]
+        int checkrating(string d, string t);
+        [OperationContract]
+        bool ValidRegistration(string reg);
 
 
 

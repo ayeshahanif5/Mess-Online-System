@@ -18,6 +18,7 @@ namespace mess_system
         }
         public void register(string fname, string lname, string reg, string password, string q, string ans)
         {
+            
             User u = new User();
             u.Fname = fname;
             u.Lname = lname;
@@ -195,6 +196,53 @@ namespace mess_system
           
        }
 
+       public void rate(int r, string d, string t)
+       {
+
+
+           foreach (Food f in FoodDL.myFood)
+           {
+               if (f.Date == d && f.Type == t)
+               {
+                   f.People += 1;
+                   f.allratings.Add(r);
+                   int sum = 0;
+                   foreach (int i in f.allratings)
+                   {
+                       sum += i;
+                   }
+
+                   f.Rating = sum / f.People;
+
+               }
+           }
+       }
+       public int checkrating(string d, string t)
+       {
+
+           int x = 0;
+           foreach (Food f in FoodDL.myFood)
+           {
+               if (f.Date == d && f.Type == t)
+               {
+                   x = f.Rating;
+               }
+           }
+           return x;
+       }
+
+       public bool ValidRegistration(string reg)
+       {
+           bool valid = true;
+           foreach (User u in Data.user)
+           {
+               if (u.Reg == reg)
+               {
+                   valid = false;
+               }
+           }
+           return valid;
+       }
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
             if (composite == null)

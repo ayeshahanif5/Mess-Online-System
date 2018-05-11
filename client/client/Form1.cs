@@ -25,12 +25,24 @@ namespace client
         private void button1_Click(object sender, EventArgs e)
         {
             localhost.Service1 s  = new localhost.Service1();
-   
-            s.register( txtfname.Text, txtlname.Text, txtreg.Text, txtpassword.Text,txtquest.Text,txtans.Text);
-            MessageBox.Show("user has been registered");
+            bool validsregistrationout;
+            bool valid;
+            s.ValidRegistration(txtreg.Text,out validsregistrationout,out valid );
+            if (validsregistrationout)
+            {
+                s.register(txtfname.Text, txtlname.Text, txtreg.Text, txtpassword.Text, txtquest.Text, txtans.Text);
+                MessageBox.Show("user has been registered");
+            }
+            else
+            {
+                MessageBox.Show("This Registration Number is alredy registered");
 
-
-              
+            }
+            txtfname.Text = "";
+            txtlname.Text = "";
+            txtpassword.Text = "";
+            txtreg.Text = "";
+            txtans.Text = "";
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -35,6 +35,7 @@
             this.txtType = new System.Windows.Forms.TextBox();
             this.txtRating = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // lbldate
@@ -95,11 +96,23 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(182, 236);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(49, 13);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Go Back";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // frmUserRting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtRating);
             this.Controls.Add(this.txtType);
@@ -123,5 +136,6 @@
         private System.Windows.Forms.TextBox txtType;
         private System.Windows.Forms.TextBox txtRating;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

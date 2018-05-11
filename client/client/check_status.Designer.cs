@@ -63,12 +63,12 @@
             // linkaddfood
             // 
             this.linkaddfood.AutoSize = true;
-            this.linkaddfood.Location = new System.Drawing.Point(104, 183);
+            this.linkaddfood.Location = new System.Drawing.Point(195, 184);
             this.linkaddfood.Name = "linkaddfood";
-            this.linkaddfood.Size = new System.Drawing.Size(46, 13);
+            this.linkaddfood.Size = new System.Drawing.Size(49, 13);
             this.linkaddfood.TabIndex = 3;
             this.linkaddfood.TabStop = true;
-            this.linkaddfood.Text = "addfood";
+            this.linkaddfood.Text = "Go Back";
             this.linkaddfood.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkaddfood_LinkClicked);
             // 
             // button1

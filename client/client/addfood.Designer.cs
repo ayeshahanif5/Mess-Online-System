@@ -49,7 +49,7 @@
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(172, 8);
+            this.txtname.Location = new System.Drawing.Point(172, 42);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(100, 20);
             this.txtname.TabIndex = 0;
@@ -57,7 +57,7 @@
             // lblname
             // 
             this.lblname.AutoSize = true;
-            this.lblname.Location = new System.Drawing.Point(33, 15);
+            this.lblname.Location = new System.Drawing.Point(32, 42);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(35, 13);
             this.lblname.TabIndex = 1;
@@ -66,7 +66,7 @@
             // lblprice
             // 
             this.lblprice.AutoSize = true;
-            this.lblprice.Location = new System.Drawing.Point(34, 53);
+            this.lblprice.Location = new System.Drawing.Point(32, 90);
             this.lblprice.Name = "lblprice";
             this.lblprice.Size = new System.Drawing.Size(31, 13);
             this.lblprice.TabIndex = 2;
@@ -75,7 +75,7 @@
             // lblday
             // 
             this.lblday.AutoSize = true;
-            this.lblday.Location = new System.Drawing.Point(34, 97);
+            this.lblday.Location = new System.Drawing.Point(33, 135);
             this.lblday.Name = "lblday";
             this.lblday.Size = new System.Drawing.Size(26, 13);
             this.lblday.TabIndex = 3;
@@ -84,7 +84,7 @@
             // lbldate
             // 
             this.lbldate.AutoSize = true;
-            this.lbldate.Location = new System.Drawing.Point(34, 135);
+            this.lbldate.Location = new System.Drawing.Point(33, 185);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(30, 13);
             this.lbldate.TabIndex = 4;
@@ -92,28 +92,28 @@
             // 
             // txtprice
             // 
-            this.txtprice.Location = new System.Drawing.Point(172, 46);
+            this.txtprice.Location = new System.Drawing.Point(172, 90);
             this.txtprice.Name = "txtprice";
             this.txtprice.Size = new System.Drawing.Size(100, 20);
             this.txtprice.TabIndex = 5;
             // 
             // txtday
             // 
-            this.txtday.Location = new System.Drawing.Point(172, 90);
+            this.txtday.Location = new System.Drawing.Point(172, 135);
             this.txtday.Name = "txtday";
             this.txtday.Size = new System.Drawing.Size(100, 20);
             this.txtday.TabIndex = 6;
             // 
             // txtdate
             // 
-            this.txtdate.Location = new System.Drawing.Point(172, 128);
+            this.txtdate.Location = new System.Drawing.Point(172, 185);
             this.txtdate.Name = "txtdate";
             this.txtdate.Size = new System.Drawing.Size(100, 20);
             this.txtdate.TabIndex = 7;
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(263, 195);
+            this.btnadd.Location = new System.Drawing.Point(99, 277);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(75, 23);
             this.btnadd.TabIndex = 8;
@@ -123,7 +123,7 @@
             // 
             // cmdupdate
             // 
-            this.cmdupdate.Location = new System.Drawing.Point(263, 224);
+            this.cmdupdate.Location = new System.Drawing.Point(197, 277);
             this.cmdupdate.Name = "cmdupdate";
             this.cmdupdate.Size = new System.Drawing.Size(75, 23);
             this.cmdupdate.TabIndex = 9;
@@ -134,7 +134,7 @@
             // lbltype
             // 
             this.lbltype.AutoSize = true;
-            this.lbltype.Location = new System.Drawing.Point(34, 176);
+            this.lbltype.Location = new System.Drawing.Point(32, 234);
             this.lbltype.Name = "lbltype";
             this.lbltype.Size = new System.Drawing.Size(31, 13);
             this.lbltype.TabIndex = 10;
@@ -142,7 +142,7 @@
             // 
             // txttype
             // 
-            this.txttype.Location = new System.Drawing.Point(172, 169);
+            this.txttype.Location = new System.Drawing.Point(172, 234);
             this.txttype.Name = "txttype";
             this.txttype.Size = new System.Drawing.Size(100, 20);
             this.txttype.TabIndex = 11;
@@ -150,7 +150,7 @@
             // linkviewmenu
             // 
             this.linkviewmenu.AutoSize = true;
-            this.linkviewmenu.Location = new System.Drawing.Point(18, 205);
+            this.linkviewmenu.Location = new System.Drawing.Point(343, 9);
             this.linkviewmenu.Name = "linkviewmenu";
             this.linkviewmenu.Size = new System.Drawing.Size(60, 13);
             this.linkviewmenu.TabIndex = 12;
@@ -161,7 +161,7 @@
             // lblUpdateStatus
             // 
             this.lblUpdateStatus.AutoSize = true;
-            this.lblUpdateStatus.Location = new System.Drawing.Point(18, 234);
+            this.lblUpdateStatus.Location = new System.Drawing.Point(262, 9);
             this.lblUpdateStatus.Name = "lblUpdateStatus";
             this.lblUpdateStatus.Size = new System.Drawing.Size(75, 13);
             this.lblUpdateStatus.TabIndex = 13;
@@ -172,7 +172,7 @@
             // lbllRating
             // 
             this.lbllRating.AutoSize = true;
-            this.lbllRating.Location = new System.Drawing.Point(104, 205);
+            this.lbllRating.Location = new System.Drawing.Point(102, 9);
             this.lbllRating.Name = "lbllRating";
             this.lbllRating.Size = new System.Drawing.Size(72, 13);
             this.lbllRating.TabIndex = 14;
@@ -183,7 +183,7 @@
             // linkstatus
             // 
             this.linkstatus.AutoSize = true;
-            this.linkstatus.Location = new System.Drawing.Point(121, 234);
+            this.linkstatus.Location = new System.Drawing.Point(180, 9);
             this.linkstatus.Name = "linkstatus";
             this.linkstatus.Size = new System.Drawing.Size(65, 13);
             this.linkstatus.TabIndex = 15;
@@ -194,7 +194,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(202, 205);
+            this.linkLabel1.Location = new System.Drawing.Point(21, 9);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(60, 13);
             this.linkLabel1.TabIndex = 16;
@@ -206,7 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 262);
+            this.ClientSize = new System.Drawing.Size(408, 312);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.linkstatus);
             this.Controls.Add(this.lbllRating);

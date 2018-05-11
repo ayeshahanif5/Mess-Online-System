@@ -27,5 +27,12 @@ namespace client
         {
 
         }
+
+        private void lbllGoBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmaddfood f = new frmaddfood();
+            f.Show();
+            this.Hide();
+        }
     }
 }

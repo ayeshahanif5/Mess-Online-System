@@ -29,5 +29,12 @@ namespace client
             localhost.Service1 s = new localhost.Service1();
             s.block();
         }
+
+        private void lbllGoBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmaddfood f = new frmaddfood();
+            f.Show();
+            this.Hide();
+        }
     }
 }

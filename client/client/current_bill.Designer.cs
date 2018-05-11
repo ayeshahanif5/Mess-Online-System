@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbllGoBack = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -50,11 +51,23 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // lbllGoBack
+            // 
+            this.lbllGoBack.AutoSize = true;
+            this.lbllGoBack.Location = new System.Drawing.Point(139, 194);
+            this.lbllGoBack.Name = "lbllGoBack";
+            this.lbllGoBack.Size = new System.Drawing.Size(49, 13);
+            this.lbllGoBack.TabIndex = 2;
+            this.lbllGoBack.TabStop = true;
+            this.lbllGoBack.Text = "Go Back";
+            this.lbllGoBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbllGoBack_LinkClicked);
+            // 
             // current_bill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.lbllGoBack);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "current_bill";
@@ -68,5 +81,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.LinkLabel lbllGoBack;
     }
 }

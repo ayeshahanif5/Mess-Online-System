@@ -30,6 +30,7 @@
         {
             this.btnUpdate = new System.Windows.Forms.Button();
             this.txtregno = new System.Windows.Forms.TextBox();
+            this.lbllGoBack = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -49,11 +50,23 @@
             this.txtregno.Size = new System.Drawing.Size(100, 20);
             this.txtregno.TabIndex = 1;
             // 
+            // lbllGoBack
+            // 
+            this.lbllGoBack.AutoSize = true;
+            this.lbllGoBack.Location = new System.Drawing.Point(197, 145);
+            this.lbllGoBack.Name = "lbllGoBack";
+            this.lbllGoBack.Size = new System.Drawing.Size(48, 13);
+            this.lbllGoBack.TabIndex = 2;
+            this.lbllGoBack.TabStop = true;
+            this.lbllGoBack.Text = "Go back";
+            this.lbllGoBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbllGoBack_LinkClicked);
+            // 
             // frmUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.lbllGoBack);
             this.Controls.Add(this.txtregno);
             this.Controls.Add(this.btnUpdate);
             this.Name = "frmUpdate";
@@ -68,5 +81,6 @@
 
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.TextBox txtregno;
+        private System.Windows.Forms.LinkLabel lbllGoBack;
     }
 }

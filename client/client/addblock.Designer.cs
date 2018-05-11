@@ -30,6 +30,7 @@
         {
             this.cmdadd = new System.Windows.Forms.Button();
             this.cmdblock = new System.Windows.Forms.Button();
+            this.lbllGoBack = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // cmdadd
@@ -44,7 +45,7 @@
             // 
             // cmdblock
             // 
-            this.cmdblock.Location = new System.Drawing.Point(116, 154);
+            this.cmdblock.Location = new System.Drawing.Point(116, 110);
             this.cmdblock.Name = "cmdblock";
             this.cmdblock.Size = new System.Drawing.Size(75, 23);
             this.cmdblock.TabIndex = 1;
@@ -52,16 +53,29 @@
             this.cmdblock.UseVisualStyleBackColor = true;
             this.cmdblock.Click += new System.EventHandler(this.cmdblock_Click);
             // 
+            // lbllGoBack
+            // 
+            this.lbllGoBack.AutoSize = true;
+            this.lbllGoBack.Location = new System.Drawing.Point(135, 163);
+            this.lbllGoBack.Name = "lbllGoBack";
+            this.lbllGoBack.Size = new System.Drawing.Size(49, 13);
+            this.lbllGoBack.TabIndex = 2;
+            this.lbllGoBack.TabStop = true;
+            this.lbllGoBack.Text = "Go Back";
+            this.lbllGoBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbllGoBack_LinkClicked);
+            // 
             // addblock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.lbllGoBack);
             this.Controls.Add(this.cmdblock);
             this.Controls.Add(this.cmdadd);
             this.Name = "addblock";
             this.Text = "addblock";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -69,5 +83,6 @@
 
         private System.Windows.Forms.Button cmdadd;
         private System.Windows.Forms.Button cmdblock;
+        private System.Windows.Forms.LinkLabel lbllGoBack;
     }
 }
